@@ -148,7 +148,7 @@ header.masthead .intro-heading {
 .timeline > li .timeline-image {
   width: 60px;
   height: 60px;
-  background-color: #fff;
+  background-color: #fc8319;
   border: 2px solid #fc8319;
 }
 
@@ -170,17 +170,17 @@ header.masthead .intro-heading {
 
 /* Contact section improvements */
 #contact {
-  background-color: #2c3e50;
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
 }
 
 #contact .section-heading {
-  color: #fff;
+  color: #333;
 }
 
 #contact .section-subheading {
-  color: #bdc3c7;
+  color: #666;
   font-size: 16px;
-}
 
 #contact .fa-stack {
   margin-bottom: 25px;
@@ -195,8 +195,12 @@ header.masthead .intro-heading {
 }
 
 #contact p {
-  color: #bdc3c7;
+  color: #555;
   font-size: 14px;
+}
+
+#contact .service-heading {
+  color: #333 !important;
 }
 
 /* Footer adjustments */
