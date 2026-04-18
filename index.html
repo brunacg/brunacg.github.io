@@ -23,6 +23,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -39,16 +40,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Resume</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -64,31 +71,55 @@
       <div class="intro-text">
         <div class="intro-lead-in">PhD Candidate in Artificial Intelligence</div>
         <div class="intro-heading text-uppercase">Bruna Campos Guedes</div>
-        <div class="intro-lead-in"><h3>Developing Scalable Graph-based ML for Healthcare</h3></div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Informations</a>
+        <div class="intro-lead-in" style="font-weight: 300; font-size: 18px; margin: 30px 0; color: #555;">Machine Learning Researcher in Healthcare AI</div>
+        <div class="intro-lead-in" style="font-weight: 400; font-size: 16px; color: #777; line-height: 1.8; margin-bottom: 50px;">I develop machine learning methods for incomplete and heterogeneous clinical data, with a focus on graph-based learning and neuroimaging.</div>
+        <div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about" style="margin-right: 15px; margin-bottom: 10px;">CV</a>
+          <a class="btn btn-secondary btn-xl text-uppercase" href="https://github.com/brunacg?tab=repositories" target="_blank" style="margin-right: 15px; margin-bottom: 10px;">GitHub</a>
+          <a class="btn btn-secondary btn-xl text-uppercase" href="mailto:brunacamposguedes@gmail.com">Email</a>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- About Me! -->
-  <section class="page-section" id="services">
+  <section class="page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">About</h2>
-          <h4 class="section-subheading text-muted">Let me introduce myself!</h4>
-          <h3 class="section-subheading text-muted">   </h3>
+          <h4 class="section-subheading text-muted">Research profile and current focus.</h4>
         </div>
       </div>
       <div class="row">
-            <img class="mx-auto col-md-3" src="img/team/eu.jpg" alt="">
-            <h4>  </h4>
-            <p class="text-muted text-center">I am a PhD Candidate in Artificial Intelligence at the University of São Paulo (ICMC-USP), advised by <a href="https://www.icmc.usp.br/pessoas?id=189531">Prof. André de Carvalho</a>. 
-  My research focuses on <b>Graph Neural Networks (GNNs)</b> and representation learning for integrating heterogeneous biomedical data, 
-  with a current application in Alzheimer’s disease. With a background in Biomedical Engineering and professional experience 
-  as a Data Scientist, I am passionate about building scalable, interpretable, and open-source AI tools that bridge the gap 
-  between machine learning theory and clinical practice.</p>
-       </div>
+        <div class="col-lg-8 mx-auto text-center">
+          <p class="text-muted">I am a PhD Candidate in Artificial Intelligence at the University of São Paulo (ICMC-USP), advised by <a href="https://www.icmc.usp.br/pessoas?id=189531">Prof. André de Carvalho</a>. My research focuses on <strong>Graph Neural Networks (GNNs)</strong> and representation learning for integrating incomplete and heterogeneous biomedical data, with a current application to neuroimaging and Alzheimer's disease. With a background in Biomedical Engineering and experience as a Data Scientist, I build scalable, interpretable AI tools that bridge theoretical machine learning and clinical practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests -->
+  <section class="page-section bg-light" id="research">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Research Interests</h2>
+          <h4 class="section-subheading text-muted">Developing robust machine learning methods for real-world clinical data.</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p class="text-muted">My research focuses on developing robust machine learning methods for real-world clinical data, which is often incomplete, noisy, and heterogeneous.</p>
+          <ul class="list-unstyled text-muted">
+            <li>• Graph Neural Networks for biomedical data integration</li>
+            <li>• Learning from missing and partially observed data</li>
+            <li>• Causal inference in healthcare applications</li>
+            <li>• Neuroimaging analysis for Autism Spectrum Disorder</li>
+          </ul>
+          <p class="text-muted">I am particularly interested in methods that combine strong theoretical foundations with practical clinical impact.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -97,13 +128,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Projects</h2>
-          <h4 class="section-subheading text-muted">Projects developed during academic journey</h4>
-          <h3 class="section-subheading text-muted">  </h3>
+          <h2 class="section-heading text-uppercase">Featured Projects</h2>
+          <h4 class="section-subheading text-muted">Selected research and technical projects aligned with healthcare AI.</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -113,119 +143,67 @@
             <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="Graph-based Patient Similarity">
           </a>
           <div class="portfolio-caption">
-            <h4>Graph-based Patient Similarity</h4>
-            <p class="text-muted">GNN-based Alzheimer’s diagnosis using message passing to integrate heterogeneous clinical and imaging data.</p>
+            <h4>Learning from Incomplete Clinical Data</h4>
+            <p class="text-muted">Graph Neural Networks to integrate heterogeneous clinical and neuroimaging data for scalable patient similarity and early disease detection.</p>
+            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="DiscoTherapy Rehabilitation Game">
           </a>
           <div class="portfolio-caption">
-            <h4>Competition</h4>
-            <p class="text-muted">DiscoTherapy - A game for upper limb motor rehabilitation based on motion capture and muscle activation</p>
+            <h4>EMG-based Rehabilitation Game</h4>
+            <p class="text-muted">Developed a serious game combining IMU and EMG feedback to support upper-limb motor rehabilitation with adaptive difficulty.</p>
+            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">Artificial Hand Prototype Using Sensors and Arduino Microcontroller</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">The Problem of Geometry of Discrete Molecular Distances</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="MyoFish Rehabilitation">
           </a>
           <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">Serious Game for Motor Rehabilitation Using Electromyography Signs</p>
+            <h4>Interactive EMG Rehabilitation</h4>
+            <p class="text-muted">Built a gamified rehabilitation system that interprets EMG signals and delivers real-time feedback to improve patient adherence.</p>
+            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="Stress Monitoring Biofeedback">
           </a>
           <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">Device for Stress Monitoring Through Biofeedback</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">Electromiographic Comparison of the Rectus Femoris Muscle Between Sedentary and Non-sedentary Individuals</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/07-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Paper</h4>
-            <p class="text-muted">Greenhouse Automated Using Microcontroller Arduino and Serial Communication</p>
+            <h4>Clinical Biofeedback Monitoring</h4>
+            <p class="text-muted">Designed a stress-monitoring device using physiological signals to identify periods of high stress and support clinical wellbeing.</p>
+            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About  é Resume-->
-  <section class="page-section" id="about">
+  <!-- Experience -->
+  <section class="page-section" id="experience">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Resume</h2>
-          <h4 class="section-subheading text-muted">Academic and Professinal Path</h4>
+          <h2 class="section-heading text-uppercase">Experience</h2>
+          <h4 class="section-subheading text-muted">Academic and industry experience with a focus on healthcare AI.</h4>
           <h3 class="section-subheading text-muted">   </h3>
         </div>
       </div>
@@ -370,52 +348,66 @@
     </div>
   </section>
 
-  <!-- Team é Skills-->
-  <section class="bg-light page-section" id="team">
+  <section class="page-section" id="publications">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Skills & Expertise</h2>
-          <h3 class="section-subheading text-muted">Bridging the gap between Machine Learning theory and Biomedical applications.</h3>
+          <h2 class="section-heading text-uppercase">Publications</h2>
+          <h4 class="section-subheading text-muted">Peer-reviewed research outputs and academic evidence.</h4>
         </div>
       </div>
-      <div class="row text-center">
-        
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-brain fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">AI & Research</h4>
-          <p class="text-muted">
-            <b>Specialization:</b> Graph Neural Networks (GNNs), Deep Learning, and Generative AI (GANs).<br>
-            <b>Frameworks:</b> PyTorch, TensorFlow, PyTorch Geometric, OpenCV.<br>
-            <b>Languages:</b> Python (Expert), C++, MATLAB, R.
-          </p>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <ul class="list-unstyled text-muted">
+            <li><strong>DiscoTherapy</strong> — Innovations in Electromyography and Kinesiology. <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank" rel="noopener">doi.org/10.29327/cobecseb.78900</a></li>
+            <li><strong>Device for Stress Monitoring Through Biofeedback</strong> — XI Simpósio de Engenharia Biomédica. <a href="https://doi.org/10.29327/xiseb.128408" target="_blank" rel="noopener">doi.org/10.29327/xiseb.128408</a></li>
+            <li><strong>Electromyographic Comparison of the Rectus Femoris Muscle</strong> — XI Simpósio de Engenharia Biomédica. <a href="https://doi.org/10.29327/xiseb.128430" target="_blank" rel="noopener">doi.org/10.29327/xiseb.128430</a></li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-database fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Data & Development</h4>
-          <p class="text-muted">
-            Extensive experience in <b>Multimodal Data Fusion</b> and Signal Processing. Skilled in developing <b>scalable AI systems</b> for real-time identity verification and clinical decision support. Proficient in Unity3D for medical gamification and Arduino-based prototyping.
-          </p>
+  <!-- Technical Skills -->
+  <section class="page-section" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Technical Skills</h2>
+          <h4 class="section-subheading text-muted">Core tools, methods, and domains for healthcare AI research.</h4>
         </div>
-
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-globe-americas fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">International Profile</h4>
-          <p class="text-muted">
-            <b>English (B2, TOEIC®)</b> and <b>French (B1, DELF)</b>. My research background includes significant international mobility, having lived and worked in <b>England (University of Bristol)</b> and <b>France (Aix-Marseille University)</b>, fostering a global perspective on scientific collaboration.
-          </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div style="margin-bottom: 80px;">
+            <h4 class="service-heading">Languages & Frameworks</h4>
+            <p class="text-muted">Python, C/C++, MATLAB, R · PyTorch, PyTorch Geometric, TensorFlow, Scikit-learn · NumPy, Pandas, OpenCV</p>
+          </div>
+          <div style="margin-bottom: 80px;">
+            <h4 class="service-heading">Research Areas</h4>
+            <p class="text-muted">Graph Neural Networks, Biomedical Signal Processing, Computer Vision, Robust ML, Missing Data, Causal Inference, Neuroimaging</p>
+          </div>
+          <div>
+            <h4 class="service-heading">Tools & Platforms</h4>
+            <p class="text-muted">Git, Linux, Docker, Jupyter, Unity3D, Arduino, Reproducible Research Workflows</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="page-section bg-light" id="goals">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Future Research Goals</h2>
+          <h4 class="section-subheading text-muted">A clear academic direction for PhD and fellowship applications.</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p class="text-muted">My long-term goal is to lead research at the intersection of machine learning and healthcare. I aim to develop methods that handle incomplete and multimodal clinical data; are robust, interpretable, and clinically useful; and bridge the gap between theoretical ML and real-world deployment. I am particularly interested in pursuing a PhD focused on these challenges.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -460,31 +452,22 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Me</h2>
-          <h3 class="section-subheading text-white">If you have any question, curiosity, doubt or just want to chat, please contact:</h3>
+          <h2 class="section-heading text-uppercase">Contact</h2>
+          <h3 class="section-subheading text-white">I am currently seeking PhD opportunities and research collaborations.</h3>
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-           <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading text-white">Adress</h4>
-          <p class="text-white">Uberlândia, Brazil</p>
+        <div class="col-md-4" style="margin-bottom: 40px;">
+          <h4 class="service-heading text-white" style="margin-top: 0;">Location</h4>
+          <p class="text-white" style="margin: 0;">São Carlos, Brazil</p>
+        </div>
+        <div class="col-md-4" style="margin-bottom: 40px;">
+          <h4 class="service-heading text-white" style="margin-top: 0;">Email</h4>
+          <p class="text-white" style="margin: 0;"><a href="mailto:brunacampos.g@usp.br" style="color: #fc8319;">brunacampos.g@usp.br</a></p>
         </div>
         <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading text-white">Email</h4>
-          <p class="text-white">brunacamposguedes@gmail.com</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading text-white">Telegram</h4>
-          <p class="text-white">@brunacg</p>
+          <h4 class="service-heading text-white" style="margin-top: 0;">Telegram</h4>
+          <p class="text-white" style="margin: 0;"><a href="https://t.me/brunacg" style="color: #fc8319;">@brunacg</a></p>
         </div>
       </div>
     </div>
@@ -505,13 +488,8 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://scholar.google.com" target="_blank" rel="noopener">
+              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=pt-BR" target="_blank" rel="noopener">
                 <i class="fas fa-graduation-cap"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.researchgate.net" target="_blank" rel="noopener">
-                <i class="fab fa-researchgate"></i>
               </a>
             </li>
 

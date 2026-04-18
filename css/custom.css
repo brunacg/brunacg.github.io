@@ -1,0 +1,307 @@
+/* Custom Minimalist Styles for Research Portfolio */
+
+/* Global improvements */
+body {
+  background-color: #fafafa;
+  font-weight: 400;
+}
+
+/* Cleaner link styling */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Improved section spacing */
+.page-section {
+  background-color: #fff;
+  margin-bottom: 1px;
+}
+
+.page-section.bg-light {
+  background-color: #f9f9f9;
+}
+
+/* Hero section adjustments */
+header.masthead {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  text-align: center;
+}
+
+header.masthead .intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header.masthead .intro-heading {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Button improvements */
+.btn {
+  border-radius: 2px;
+  padding: 12px 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #fc8319;
+  border-color: #fc8319;
+}
+
+.btn-primary:hover {
+  background-color: #e07010;
+  border-color: #e07010;
+  box-shadow: 0 2px 8px rgba(252, 131, 25, 0.2);
+}
+
+.btn-secondary {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #efefef;
+  border-color: #ccc;
+  color: #222;
+}
+
+/* Clean typography */
+.section-heading {
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.section-subheading {
+  font-weight: 400;
+  font-style: normal;
+  color: #777;
+  letter-spacing: 0.5px;
+}
+
+/* Research interests list improvements */
+#research ul li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Publications and awards list */
+.list-unstyled {
+  margin: 0;
+}
+
+.list-unstyled li {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.list-unstyled li:first-child {
+  padding-top: 0;
+}
+
+.list-unstyled li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Service heading (Skills section) */
+.service-heading {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 40px 0 15px 0;
+  text-transform: none;
+}
+
+/* Timeline improvements */
+.timeline {
+  padding: 0;
+}
+
+.timeline > li {
+  margin-bottom: 80px;
+}
+
+.timeline > li .timeline-panel {
+  padding: 40px 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.timeline > li .timeline-image {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #fc8319;
+}
+
+.timeline > li .timeline-panel h4 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.timeline > li .timeline-panel h5 {
+  font-size: 14px;
+  color: #777;
+}
+
+.timeline > li .timeline-panel h6 {
+  color: #999;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* Contact section improvements */
+#contact {
+  background-color: #2c3e50;
+}
+
+#contact .section-heading {
+  color: #fff;
+}
+
+#contact .section-subheading {
+  color: #bdc3c7;
+  font-size: 16px;
+}
+
+#contact .fa-stack {
+  margin-bottom: 25px;
+}
+
+#contact .service-heading {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+/* Footer adjustments */
+.footer {
+  background-color: #212529;
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.social-buttons a:hover {
+  background-color: #fc8319;
+  color: #fff;
+}
+
+/* Reduce excessive spacing on smaller sections */
+@media (max-width: 767px) {
+  .page-section {
+    padding: 80px 0;
+  }
+
+  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Focus on readability */
+p {
+  word-spacing: 0.05em;
+  letter-spacing: 0.3px;
+}
+
+/* Improve modal appearance */
+.modal-content {
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+}
+
+.modal-body h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.modal-body p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Clean nav bar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #111 !important;
+}
+
+.nav-link {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #666 !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fc8319 !important;
+}
+
+/* Scroll animation smoothness */
+html {
+  scroll-behavior: smooth;
+}
