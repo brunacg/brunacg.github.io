@@ -1,736 +1,1197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- tudo de "service" é About me! -->
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Bruna Guedes | PhD Candidate AI & GNNs</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-  <!-- Custom styles for this template -->
-  <link href="css/agency.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Portfolio Bruna</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#additional">Additional</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#goals">Goals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">PhD Student in Machine Learning for Neuroimaging</div>
-        <div class="intro-heading text-uppercase">Bruna Campos Guedes</div>
-        <div class="intro-lead-in" style="font-weight: 300; font-size: 18px; margin: 30px 0; color: #555;">I develop machine learning methods for incomplete and heterogeneous clinical data, with a focus on neuroimaging and graph-based learning.</div>
-        <div class="intro-lead-in" style="font-weight: 400; font-size: 16px; color: #777; line-height: 1.8; margin-bottom: 30px;">
-          • PhD in Computer Science (USP)  <br>
-          • Research in fMRI and Autism Spectrum Disorder (ASD)  <br>
-          • Background in Biomedical Engineering
-        </div>
-        <div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about" style="margin-right: 15px; margin-bottom: 10px;">CV</a>
-          <a class="btn btn-secondary btn-xl text-uppercase" href="https://github.com/brunacg?tab=repositories" target="_blank" style="margin-right: 15px; margin-bottom: 10px;">GitHub</a>
-          <a class="btn btn-secondary btn-xl text-uppercase" href="mailto:brunacamposguedes@gmail.com">Email</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- About -->
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h4 class="section-subheading text-muted">Short, strategic research profile.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="text-muted">I am a PhD student in Computer Science at the University of São Paulo (USP), working on artificial intelligence methods for neuroscience applications.</p>
-          <p class="text-muted">My background is in Biomedical Engineering, where I developed an interest in applying machine learning to physiological signals and neuroimaging data.</p>
-          <p class="text-muted">I have experience in both academic research and industry, and I am particularly interested in bridging the gap between theoretical machine learning and real-world clinical applications.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research Interests -->
-  <section class="page-section bg-light" id="research">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Research Interests</h2>
-          <h4 class="section-subheading text-muted">Robust methods for noisy, incomplete, and multimodal clinical data.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <p class="text-muted">Real-world clinical data is inherently incomplete, noisy, and heterogeneous. My research focuses on developing machine learning methods that remain robust under these conditions, particularly for neuroimaging applications.</p>
-          <p class="text-muted">Current directions:</p>
-          <ul class="list-unstyled text-muted">
-            <li>• Graph Neural Networks for biomedical data</li>
-            <li>• Learning from missing and partially observed data</li>
-            <li>• Neuroimaging analysis (fMRI)</li>
-            <li>• Applications to Autism Spectrum Disorder (ASD)</li>
-          </ul>
-          <p class="text-muted">I am especially interested in methods that combine strong theoretical foundations with practical clinical impact.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Grid é na verdade Projects -->
-  <section class="bg-light page-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Featured Projects</h2>
-          <h4 class="section-subheading text-muted">Top research and technical projects aligned with neuroimaging AI.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="Learning from Incomplete Neuroimaging Data">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Learning from Incomplete Neuroimaging Data</h4>
-            <p class="text-muted">Developing ML methods for handling missing and heterogeneous clinical data, with a focus on fMRI analysis and ASD-related patterns.</p>
-            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="fMRI Correlation Analysis">
-          </a>
-          <div class="portfolio-caption">
-            <h4>fMRI Correlation Analysis</h4>
-            <p class="text-muted">Applied correlation-based analysis to functional MRI data, investigating brain activity patterns with high-dimensional signal processing.</p>
-            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="3D Trajectory Estimation with ICP">
-          </a>
-          <div class="portfolio-caption">
-            <h4>3D Trajectory Estimation with ICP</h4>
-            <p class="text-muted">Implemented ICP from scratch to estimate trajectories from LiDAR point clouds, with evaluation against ground-truth and error accumulation analysis.</p>
-            <a href="https://github.com/brunacg?tab=repositories" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="page-section" id="experience">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Experience</h2>
-          <h4 class="section-subheading text-muted">Industry and academic research roles with a strong ML focus.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 mb-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h4 class="card-title">Machine Learning Engineer</h4>
-              <h5 class="card-subtitle mb-2 text-muted">unico IDTech</h5>
-              <p class="text-muted">2021 - 2023</p>
-              <ul class="text-muted">
-                <li>Developed machine learning models for large-scale real-world systems.</li>
-                <li>Worked with noisy and high-volume biometric and transaction data.</li>
-                <li>Focused on robustness, bias mitigation, and model reliability.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body">
-              <h4 class="card-title">Undergraduate Research</h4>
-              <h5 class="card-subtitle mb-2 text-muted">Biomedical Engineering</h5>
-              <p class="text-muted">2018 - 2022</p>
-              <ul class="text-muted">
-                <li>Conducted research in neuroimaging and physiological signal processing.</li>
-                <li>Applied machine learning methods to biomedical and fMRI data.</li>
-                <li>Built reproducible analysis pipelines for clinical research.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section class="page-section bg-light" id="education">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Education</h2>
-          <h4 class="section-subheading text-muted">Academic training and international experience.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <ul class="list-unstyled text-muted">
-            <li><strong>PhD in Computer Science</strong><br>University of São Paulo (USP) — Focus: Artificial Intelligence for Neuroscience</li>
-            <li class="mt-3"><strong>B.Sc. in Biomedical Engineering</strong><br>Federal University of Uberlândia (UFU)</li>
-            <li class="mt-3"><strong>Exchange Program</strong><br>Polytech Marseille — France</li>
-  <section class="page-section" id="publications">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Publications & Work</h2>
-          <h4 class="section-subheading text-muted">Evidence of research activity and technical output.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <ul class="list-unstyled text-muted">
-            <li>• fMRI Correlation Analysis — Undergraduate Thesis</li>
-            <li>• Research projects in neuroimaging and machine learning</li>
-            <li>• Ongoing work on ML for incomplete clinical data</li>
+  <!-- tudo de "service" é About me! -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>
+      Bruna Guedes | PhD Candidate AI
+      &
+      GNNs
+    </title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        Portfolio Bruna
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">
+              About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#research">
+              Research
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">
+              Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">
+              Experience
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#education">
+              Education
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#publications">
+              Publications
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">
+              Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#additional">
+              Additional
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#goals">
+              Goals
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">
+              Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Technical Skills -->
-  <section class="page-section" id="skills">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Technical Skills</h2>
-          <h4 class="section-subheading text-muted">Key tools and domains for research and development.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div style="margin-bottom: 60px;">
-            <h4 class="service-heading">Languages</h4>
-            <p class="text-muted">Python, C/C++, MATLAB</p>
+    </nav>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">
+            PhD Student in Machine Learning for Neuroimaging
           </div>
-          <div style="margin-bottom: 60px;">
-            <h4 class="service-heading">ML</h4>
-            <p class="text-muted">PyTorch, Scikit-learn</p>
+          <div class="intro-heading text-uppercase">
+            Bruna Campos Guedes
           </div>
-          <div style="margin-bottom: 60px;">
-            <h4 class="service-heading">Data</h4>
-            <p class="text-muted">NumPy, Pandas</p>
+          <div class="intro-lead-in" style="font-weight: 300; font-size: 18px; margin: 30px 0; color: #555;">
+            I develop machine learning methods for incomplete and heterogeneous clinical data, with a focus on neuroimaging and graph-based learning.
           </div>
-          <div style="margin-bottom: 60px;">
-            <h4 class="service-heading">Other</h4>
-            <p class="text-muted">Git, Linux</p>
+          <div class="intro-lead-in" style="font-weight: 400; font-size: 16px; color: #777; line-height: 1.8; margin-bottom: 30px;">
+            • PhD in Computer Science (USP)
+            <br />
+            • Research in fMRI and Autism Spectrum Disorder (ASD)
+            <br />
+            • Background in Biomedical Engineering
           </div>
           <div>
-            <h4 class="service-heading">Areas</h4>
-            <p class="text-muted">Machine Learning, Computer Vision, Graph Neural Networks, Biomedical Signal Processing</p>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about" style="margin-right: 15px; margin-bottom: 10px;">
+            CV
+            </a>
+            <a class="btn btn-secondary btn-xl text-uppercase" href="https://github.com/brunacg?tab=repositories" target="_blank" style="margin-right: 15px; margin-bottom: 10px;">
+            GitHub
+            </a>
+            <a class="btn btn-secondary btn-xl text-uppercase" href="mailto:brunacamposguedes@gmail.com">
+            Email
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="page-section bg-light" id="additional">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Additional</h2>
-          <h4 class="section-subheading text-muted">Languages and recognition that support your profile.</h4>
+    </header>
+    <!-- About -->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              About
+            </h2>
+            <h4 class="section-subheading text-muted">
+              Short, strategic research profile.
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="text-muted">
+              I am a PhD student in Computer Science at the University of São Paulo (USP), working on artificial intelligence methods for neuroscience applications.
+            </p>
+            <p class="text-muted">
+              My background is in Biomedical Engineering, where I developed an interest in applying machine learning to physiological signals and neuroimaging data.
+            </p>
+            <p class="text-muted">
+              I have experience in both academic research and industry, and I am particularly interested in bridging the gap between theoretical machine learning and real-world clinical applications.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <ul class="list-unstyled text-muted">
-            <li><strong>Languages:</strong> English — Advanced; French — Intermediate</li>
-            <li class="mt-3"><strong>Awards:</strong> Undergraduate Research Scholarship (PIBIC/FAPEMIG)</li>
-          </ul>
+    </section>
+    <!-- Research Interests -->
+    <section class="page-section bg-light" id="research">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              Research Interests
+            </h2>
+            <h4 class="section-subheading text-muted">
+              Robust methods for noisy, incomplete, and multimodal clinical data.
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p class="text-muted">
+              Real-world clinical data is inherently incomplete, noisy, and heterogeneous. My research focuses on developing machine learning methods that remain robust under these conditions, particularly for neuroimaging applications.
+            </p>
+            <p class="text-muted">
+              Current directions:
+            </p>
+            <ul class="list-unstyled text-muted">
+              <li>
+                • Graph Neural Networks for biomedical data
+              </li>
+              <li>
+                • Learning from missing and partially observed data
+              </li>
+              <li>
+                • Neuroimaging analysis (fMRI)
+              </li>
+              <li>
+                • Applications to Autism Spectrum Disorder (ASD)
+              </li>
+            </ul>
+            <p class="text-muted">
+              I am especially interested in methods that combine strong theoretical foundations with practical clinical impact.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="goals">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Future Research Goals</h2>
-          <h4 class="section-subheading text-muted">A clear academic direction for PhD and fellowship applications.</h4>
+    </section>
+    <!-- Portfolio Grid é na verdade Projects -->
+    <section class="bg-light page-section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              Featured Projects
+            </h2>
+            <h4 class="section-subheading text-muted">
+              Top research and technical projects aligned with neuroimaging AI.
+            </h4>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <p class="text-muted">My long-term goal is to advance machine learning methods for healthcare applications. I aim to develop models that:</p>
-          <ul class="list-unstyled text-muted">
-            <li>• Handle incomplete and multimodal clinical data</li>
-            <li>• Are robust, interpretable, and clinically useful</li>
-            <li>• Bridge the gap between theoretical ML and real-world deployment</li>
-          </ul>
-          <p class="text-muted">I am currently seeking research collaborations and PhD opportunities aligned with these goals.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="awards">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Awards & Honors</h2>
-          <h4 class="section-subheading text-muted">Academic achievements and recognition that support your research profile.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <ul class="list-unstyled">
-            <li><strong>Winner of Competition:</strong> First place in "Innovations in Electromyography and Kinesiology" (COBEC-SEB 2017).</li>
-            <li><strong>OBMEP:</strong> Bronze medals (2010, 2015) and honorable mentions (2009, 2012, 2014), demonstrating exceptional mathematical reasoning desde early academic training.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="hobbies">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Hobbies</h2>
-          <h4 class="section-subheading text-muted">Personal interests and leisure activities.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <p class="text-muted">I have a technical course in music, on the keyboard instrument, which, despite being a leisure, was essential in my personal formation, facilitating group work and logical development. I also enjoy traveling, reading and going to the movies and theater.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="page-section" id="outreach">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Outreach & Community</h2>
-          <h4 class="section-subheading text-muted">Volunteer work that supports technology education and inclusion.</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="text-muted">Volunteer Assistant at Data Girls: promoting female engagement in technology and data science through mentorship and workshops.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact</h2>
-          <h3 class="section-subheading">Get in touch for research collaborations or inquiries.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4" style="margin-bottom: 40px;">
-          <h4 class="service-heading" style="margin-top: 0;">Location</h4>
-          <p style="margin: 0; color: #555;">São Carlos, Brazil</p>
-        </div>
-        <div class="col-md-4" style="margin-bottom: 40px;">
-          <h4 class="service-heading" style="margin-top: 0;">Email</h4>
-          <p style="margin: 0;"><a href="mailto:brunacampos.g@usp.br" style="color: #fc8319;">brunacampos.g@usp.br</a></p>
-        </div>
-        <div class="col-md-4">
-          <h4 class="service-heading" style="margin-top: 0;">Telegram</h4>
-          <p style="margin: 0;"><a href="https://t.me/brunacg" style="color: #fc8319;">@brunacg</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
-        </div>
-        <div class="col-md-4 text-center">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x">
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="Learning from Incomplete Neuroimaging Data" />
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                Learning from Incomplete Neuroimaging Data
+              </h4>
+              <p class="text-muted">
+                Developing ML methods for handling missing and heterogeneous clinical data, with a focus on fMRI analysis and ASD-related patterns.
+              </p>
+              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
+              GitHub
               </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=pt-BR" target="_blank" rel="noopener">
-                <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x">
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="fMRI Correlation Analysis" />
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                fMRI Correlation Analysis
+              </h4>
+              <p class="text-muted">
+                Applied correlation-based analysis to functional MRI data, investigating brain activity patterns with high-dimensional signal processing.
+              </p>
+              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
+              GitHub
               </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/brunacamposguedes/" target="_blank" rel="noopener">
-                <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x">
+                </i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="3D Trajectory Estimation with ICP" />
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                3D Trajectory Estimation with ICP
+              </h4>
+              <p class="text-muted">
+                Implemented ICP from scratch to estimate trajectories from LiDAR point clouds, with evaluation against ground-truth and error accumulation analysis.
+              </p>
+              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
+              GitHub
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-right">
-          <p style="margin: 0; font-size: 14px; color: #aaa;">Auxiliary CV:&nbsp;<a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener" style="color: #fc8319;">Lattes</a></p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">DiscoTherapy</h2>
-                <p class="item-intro text-muted">1st Place - "Innovations in Electromyography" Competition (COBEC-SEB)</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/discotherapy.jpg" alt="Rehabilitation Game">
-                <p>Developed an award-winning serious game for post-stroke motor rehabilitation. The system integrates <strong>Inertial Measurement Units (IMU)</strong> for motion capture and <strong>Electromyography (EMG)</strong> sensors to monitor muscle activation. Unlike standard commercial games, DiscoTherapy allows therapists to calibrate difficulty and range of motion in real-time, providing biofeedback that facilitates cortical reorganization and patient engagement.</p>
-                <ul class="list-inline">
-                  <li><strong>Award:</strong> Winner of Innovations in EMG & Kinesiology</li>
-                  <li><strong>Keywords:</strong> Biofeedback, Signal Processing, Stroke Rehabilitation</li>
-                  <li><strong>DOI:</strong> <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank">10.29327/cobecseb.78900</a></li>
+    </section>
+    <!-- Experience -->
+    <section class="page-section" id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              Experience
+            </h2>
+            <h4 class="section-subheading text-muted">
+              Industry and academic research roles with a strong ML focus.
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Machine Learning Engineer
+                </h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                  unico IDTech
+                </h5>
+                <p class="text-muted">
+                  2021 - 2023
+                </p>
+                <ul class="text-muted">
+                  <li>
+                    Developed machine learning models for large-scale real-world systems.
+                  </li>
+                  <li>
+                    Worked with noisy and high-volume biometric and transaction data.
+                  </li>
+                  <li>
+                    Focused on robustness, bias mitigation, and model reliability.
+                  </li>
                 </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times"></i> Close Project</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Undergraduate Research
+                </h4>
+                <h5 class="card-subtitle mb-2 text-muted">
+                  Biomedical Engineering
+                </h5>
+                <p class="text-muted">
+                  2018 - 2022
+                </p>
+                <ul class="text-muted">
+                  <li>
+                    Conducted research in neuroimaging and physiological signal processing.
+                  </li>
+                  <li>
+                    Applied machine learning methods to biomedical and fMRI data.
+                  </li>
+                  <li>
+                    Built reproducible analysis pipelines for clinical research.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
+    </section>
+    <!-- Education -->
+    <section class="page-section bg-light" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">
+              Education
+            </h2>
+            <h4 class="section-subheading text-muted">
+              Academic training and international experience.
+            </h4>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h4 class="text-uppercase">Artificial Hand Prototype Using Sensors and Arduino Microcontroller</h4>
-                <p class="item-intro text-muted">10ª Edição do 10º Congresso Latino Americano de Órgãos Artificiais e Biomateriais - COLAOB</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <h5 class="text-uppercase">Abstract</h5>
-                <p>Upper limb prostheses are constantly evolving, but are lagging behind in performing certain motor functions, as well as not allowing the user to recover their tactile sensations. In search of a robotic hand that aims to meet the expectations of amputees in regaining senses of touch, Italian and Danish researchers from the Federal Polytechnic School of Lausanne in Switzerland have developed a bionic hand that has tactile sensors on the fingers. The present work aims to study the way the electrical signal is translated from the prosthesis to the nervous system, through the construction of an anatomical model with temperature and pressure sensors. The molding and construction of the hand was done with type II alginate paste and gypsum, which were wrapped in a thin fabric glove. The LM35 temperature sensor was attached to the index finger, and the piezoelectric tablet used as a pressure sensor in the palm of the hand. Both were connected to the Arduino microcontroller, which transmitted the signals received to the computer. The prototype was subjected to different temperatures and pressures. At the monitor was able to follow the changes, make comparisons and understand the operation of human skin receptors, Merkel's tactile corpuscles (tactile), the lamellar corpuscle of Pacini (deep pressure) and Ruffini's corpuscle (heat). The original prosthesis receives similar signals, which are translated into electrical peaks, mimicking the language of the nervous system, and then delivered to the nerves. To finalize the work, we intend to create a system where it is possible to reproduce and process the electrical peaks of the nervous system. There is also the intention to modify the anatomical model of the hand using a 3D printer, making it more mobile and articulated. The realization of the prototype made teaching anatomy and artificial organs more didactic, a great tool for students and teachers alike.</p>
-                <p>Keywords: Prosthesis. Sensors. Prototype. Arduino.</p>
-                <ul class="list-inline">
-                  <li>Date: August 2018</li>
-                  <li>Country: Brazil</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <ul class="list-unstyled text-muted">
+              <li>
+                <strong>
+                PhD in Computer Science
+                </strong>
+                <br />
+                University of São Paulo (USP) — Focus: Artificial Intelligence for Neuroscience
+              </li>
+              <li class="mt-3">
+                <strong>
+                B.Sc. in Biomedical Engineering
+                </strong>
+                <br />
+                Federal University of Uberlândia (UFU)
+              </li>
+              <li class="mt-3">
+                <strong>
+                Exchange Program
+                </strong>
+                <br />
+                Polytech Marseille — France
+              </li>
+              <section class="page-section" id="publications">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Publications
+                        &
+                        Work
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Evidence of research activity and technical output.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <ul class="list-unstyled text-muted">
+                        <li>
+                          • fMRI Correlation Analysis — Undergraduate Thesis
+                        </li>
+                        <li>
+                          • Research projects in neuroimaging and machine learning
+                        </li>
+                        <li>
+                          • Ongoing work on ML for incomplete clinical data
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Technical Skills -->
+              <section class="page-section" id="skills">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Technical Skills
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Key tools and domains for research and development.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <div style="margin-bottom: 60px;">
+                        <h4 class="service-heading">
+                          Languages
+                        </h4>
+                        <p class="text-muted">
+                          Python, C/C++, MATLAB
+                        </p>
+                      </div>
+                      <div style="margin-bottom: 60px;">
+                        <h4 class="service-heading">
+                          ML
+                        </h4>
+                        <p class="text-muted">
+                          PyTorch, Scikit-learn
+                        </p>
+                      </div>
+                      <div style="margin-bottom: 60px;">
+                        <h4 class="service-heading">
+                          Data
+                        </h4>
+                        <p class="text-muted">
+                          NumPy, Pandas
+                        </p>
+                      </div>
+                      <div style="margin-bottom: 60px;">
+                        <h4 class="service-heading">
+                          Other
+                        </h4>
+                        <p class="text-muted">
+                          Git, Linux
+                        </p>
+                      </div>
+                      <div>
+                        <h4 class="service-heading">
+                          Areas
+                        </h4>
+                        <p class="text-muted">
+                          Machine Learning, Computer Vision, Graph Neural Networks, Biomedical Signal Processing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="page-section bg-light" id="additional">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Additional
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Languages and recognition that support your profile.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <ul class="list-unstyled text-muted">
+                        <li>
+                          <strong>
+                          Languages:
+                          </strong>
+                          English — Advanced; French — Intermediate
+                        </li>
+                        <li class="mt-3">
+                          <strong>
+                          Awards:
+                          </strong>
+                          Undergraduate Research Scholarship (PIBIC/FAPEMIG)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="page-section" id="goals">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Future Research Goals
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        A clear academic direction for PhD and fellowship applications.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <p class="text-muted">
+                        My long-term goal is to advance machine learning methods for healthcare applications. I aim to develop models that:
+                      </p>
+                      <ul class="list-unstyled text-muted">
+                        <li>
+                          • Handle incomplete and multimodal clinical data
+                        </li>
+                        <li>
+                          • Are robust, interpretable, and clinically useful
+                        </li>
+                        <li>
+                          • Bridge the gap between theoretical ML and real-world deployment
+                        </li>
+                      </ul>
+                      <p class="text-muted">
+                        I am currently seeking research collaborations and PhD opportunities aligned with these goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="page-section" id="awards">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Awards
+                        &
+                        Honors
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Academic achievements and recognition that support your research profile.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <ul class="list-unstyled">
+                        <li>
+                          <strong>
+                          Winner of Competition:
+                          </strong>
+                          First place in "Innovations in Electromyography and Kinesiology" (COBEC-SEB 2017).
+                        </li>
+                        <li>
+                          <strong>
+                          OBMEP:
+                          </strong>
+                          Bronze medals (2010, 2015) and honorable mentions (2009, 2012, 2014), demonstrating exceptional mathematical reasoning desde early academic training.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="page-section" id="hobbies">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Hobbies
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Personal interests and leisure activities.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                      <p class="text-muted">
+                        I have a technical course in music, on the keyboard instrument, which, despite being a leisure, was essential in my personal formation, facilitating group work and logical development. I also enjoy traveling, reading and going to the movies and theater.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Contact -->
+              <section class="page-section" id="outreach">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Outreach
+                        &
+                        Community
+                      </h2>
+                      <h4 class="section-subheading text-muted">
+                        Volunteer work that supports technology education and inclusion.
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                      <p class="text-muted">
+                        Volunteer Assistant at Data Girls: promoting female engagement in technology and data science through mentorship and workshops.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="page-section" id="contact">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h2 class="section-heading text-uppercase">
+                        Contact
+                      </h2>
+                      <h3 class="section-subheading">
+                        Get in touch for research collaborations or inquiries.
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-md-4" style="margin-bottom: 40px;">
+                      <h4 class="service-heading" style="margin-top: 0;">
+                        Location
+                      </h4>
+                      <p style="margin: 0; color: #555;">
+                        São Carlos, Brazil
+                      </p>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom: 40px;">
+                      <h4 class="service-heading" style="margin-top: 0;">
+                        Email
+                      </h4>
+                      <p style="margin: 0;">
+                        <a href="mailto:brunacampos.g@usp.br" style="color: #fc8319;">
+                        brunacampos.g@usp.br
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <h4 class="service-heading" style="margin-top: 0;">
+                        Telegram
+                      </h4>
+                      <p style="margin: 0;">
+                        <a href="https://t.me/brunacg" style="color: #fc8319;">
+                        @brunacg
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Footer -->
+              <footer class="footer">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-4">
+                      <span class="copyright">
+                      Copyright
+                      Your Website 2019
+                      </span>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                          <a href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener">
+                          <i class="fab fa-github">
+                          </i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=pt-BR" target="_blank" rel="noopener">
+                          <i class="fas fa-graduation-cap">
+                          </i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/brunacamposguedes/" target="_blank" rel="noopener">
+                          <i class="fab fa-linkedin-in">
+                          </i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 text-right">
+                      <p style="margin: 0; font-size: 14px; color: #aaa;">
+                        Auxiliary CV:
+                        <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener" style="color: #fc8319;">
+                        Lattes
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!-- Portfolio Modals -->
+              <!-- Modal 1 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              DiscoTherapy
+                            </h2>
+                            <p class="item-intro text-muted">
+                              1st Place - "Innovations in Electromyography" Competition (COBEC-SEB)
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/discotherapy.jpg" alt="Rehabilitation Game" />
+                            <p>
+                              Developed an award-winning serious game for post-stroke motor rehabilitation. The system integrates
+                              <strong>
+                              Inertial Measurement Units (IMU)
+                              </strong>
+                              for motion capture and
+                              <strong>
+                              Electromyography (EMG)
+                              </strong>
+                              sensors to monitor muscle activation. Unlike standard commercial games, DiscoTherapy allows therapists to calibrate difficulty and range of motion in real-time, providing biofeedback that facilitates cortical reorganization and patient engagement.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Award:
+                                </strong>
+                                Winner of Innovations in EMG
+                                &
+                                Kinesiology
+                              </li>
+                              <li>
+                                <strong>
+                                Keywords:
+                                </strong>
+                                Biofeedback, Signal Processing, Stroke Rehabilitation
+                              </li>
+                              <li>
+                                <strong>
+                                DOI:
+                                </strong>
+                                <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank">
+                                10.29327/cobecseb.78900
+                                </a>
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h4 class="text-uppercase">The Problem of Geometry of Discrete Molecular Distances</h4>
-                <p class="item-intro text-muted">XVII Semana de Matemática e VII Semana de Estatística - 2017</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <h5 class="text-uppercase">Abstract</h5>
-                <p>Distance Geometry is the study of geometry based on the concept of distance. It appears in applications where the input data consist of an incomplete set of distances, and the output is a set of points in the Euclidean space, which realizes the given distances. An important subclass of problems in Distance Geometry has its origin in an application in biochemistry. In this type of problem we have a set of incomplete input data, related to the structure of a given protein, and we want to reproduce the structure of the protein obtaining as output the complete set of data needed to achieve this goal.</p>
-                <p>Keywords: geometry, distances, proteins.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2017</li>
-                  <li>Country: Brazil</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+              <!-- Modal 2 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h4 class="text-uppercase">
+                              Artificial Hand Prototype Using Sensors and Arduino Microcontroller
+                            </h4>
+                            <p class="item-intro text-muted">
+                              10ª Edição do 10º Congresso Latino Americano de Órgãos Artificiais e Biomateriais - COLAOB
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="" />
+                            <h5 class="text-uppercase">
+                              Abstract
+                            </h5>
+                            <p>
+                              Upper limb prostheses are constantly evolving, but are lagging behind in performing certain motor functions, as well as not allowing the user to recover their tactile sensations. In search of a robotic hand that aims to meet the expectations of amputees in regaining senses of touch, Italian and Danish researchers from the Federal Polytechnic School of Lausanne in Switzerland have developed a bionic hand that has tactile sensors on the fingers. The present work aims to study the way the electrical signal is translated from the prosthesis to the nervous system, through the construction of an anatomical model with temperature and pressure sensors. The molding and construction of the hand was done with type II alginate paste and gypsum, which were wrapped in a thin fabric glove. The LM35 temperature sensor was attached to the index finger, and the piezoelectric tablet used as a pressure sensor in the palm of the hand. Both were connected to the Arduino microcontroller, which transmitted the signals received to the computer. The prototype was subjected to different temperatures and pressures. At the monitor was able to follow the changes, make comparisons and understand the operation of human skin receptors, Merkel's tactile corpuscles (tactile), the lamellar corpuscle of Pacini (deep pressure) and Ruffini's corpuscle (heat). The original prosthesis receives similar signals, which are translated into electrical peaks, mimicking the language of the nervous system, and then delivered to the nerves. To finalize the work, we intend to create a system where it is possible to reproduce and process the electrical peaks of the nervous system. There is also the intention to modify the anatomical model of the hand using a 3D printer, making it more mobile and articulated. The realization of the prototype made teaching anatomy and artificial organs more didactic, a great tool for students and teachers alike.
+                            </p>
+                            <p>
+                              Keywords: Prosthesis. Sensors. Prototype. Arduino.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                Date: August 2018
+                              </li>
+                              <li>
+                                Country: Brazil
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">MyoFish: Serious Game for Rehabilitation</h2>
-                <p class="item-intro text-muted">Published in the 5th Brazilian Congress of EMG & Kinesiology</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/myofish.jpg" alt="MyoFish Project">
-                <p>MyoFish addresses the high dropout rates in traditional physiotherapy by gamifying muscle exercises. The game uses real-time processing of EMG signals to control an on-screen avatar, ensuring that therapeutic movements are performed correctly while maintaining high patient motivation. This research focuses on the intersection of <strong>Human-Computer Interaction (HCI)</strong> and physical therapy.</p>
-                <ul class="list-inline">
-                  <li><strong>DOI:</strong> <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank">10.29327/cobecseb.78900</a></li>
-                  <li><strong>Status:</strong> Peer-reviewed Publication</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times"></i> Close Project</button>
+              <!-- Modal 3 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h4 class="text-uppercase">
+                              The Problem of Geometry of Discrete Molecular Distances
+                            </h4>
+                            <p class="item-intro text-muted">
+                              XVII Semana de Matemática e VII Semana de Estatística - 2017
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="" />
+                            <h5 class="text-uppercase">
+                              Abstract
+                            </h5>
+                            <p>
+                              Distance Geometry is the study of geometry based on the concept of distance. It appears in applications where the input data consist of an incomplete set of distances, and the output is a set of points in the Euclidean space, which realizes the given distances. An important subclass of problems in Distance Geometry has its origin in an application in biochemistry. In this type of problem we have a set of incomplete input data, related to the structure of a given protein, and we want to reproduce the structure of the protein obtaining as output the complete set of data needed to achieve this goal.
+                            </p>
+                            <p>
+                              Keywords: geometry, distances, proteins.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                Date: October 2017
+                              </li>
+                              <li>
+                                Country: Brazil
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h4 class="text-uppercase">Device for Stress Monitoring Through Biofeedback</h4>
-                <p class="item-intro text-muted">XI Simpósio de Engenharia Biomédica – SEB 2018</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <h5 class="text-uppercase">Abstract</h5>
-                <p>Stress in the social environment that we live has be-come an alarming condition that harms the lives of about 90% of the population. It is currently the third leading cause of work breakdowns and may be the precursor to several other diseases such as anxiety, panic attacks, acute stress reactions, OCD, among others. With this in mind, the Biofeedback Stress Moni-toring Device consists in a project aimed at monitoring some fisiological parameters, such as changes in heart rate, body temperature and skin resistance with the objective to identify the daily periods in which the user has been in a stressful situation.</p>
-                <p>Keywords: Stress, Biofeedback, Temperature.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2018</li>
-                  <li>Country: Brazil</li>
-                  <li>DOI: 10.29327/xiseb.128408</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+              <!-- Modal 4 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              MyoFish: EMG-Controlled Serious Game
+                            </h2>
+                            <p class="item-intro text-muted">
+                              Published in the 5th Brazilian Congress of EMG
+                              &
+                              Kinesiology
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/myofish.jpg" alt="MyoFish Project" />
+                            <p>
+                              MyoFish addresses patient drop-out in traditional physiotherapy by gamifying upper-limb exercises. The system processes
+                              <strong>
+                              Electromyographic (EMG) signals
+                              </strong>
+                              in real-time, where the intensity of muscle contraction directly controls the vertical displacement of an avatar. This
+                              <strong>
+                              biofeedback loop
+                              </strong>
+                              ensures patients maintain the required effort levels while providing an engaging, interactive environment for motor recovery.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Research Focus:
+                                </strong>
+                                Human-Computer Interaction (HCI) in Healthcare
+                              </li>
+                              <li>
+                                <strong>
+                                DOI:
+                                </strong>
+                                <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank">
+                                10.29327/cobecseb.78900
+                                </a>
+                              </li>
+                              <li>
+                                <strong>
+                                Status:
+                                </strong>
+                                Peer-reviewed Publication
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-
-                <h4 class="text-uppercase">Electromiographic Comparison of the Rectus Femoris Muscle Between Sedentary and Non-sedentary Individuals</h4>
-                <p class="item-intro text-muted">XI Simpósio de Engenharia Biomédica – SEB 2018</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <h5 class="text-uppercase">Abstract</h5>
-                <p>Using the artifice of collection and analysis of electromyographic signals that capture the electrical activity of muscles, one can compare the muscular contraction of individuals with different lifestyles. As the relationship between the force produced by regularly trained muscles and sedentary muscles, even when they are not of dominant members of the individual. </p>
-                <p>Keywords: Electromyography, signal processing, biomechanics, muscles, strength.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2018</li>
-                  <li>Country: Brazil</li>
-                  <li>DOI: 10.29327/xiseb.128430</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+              <!-- Modal 5 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              Multimodal Biofeedback Stress Monitor
+                            </h2>
+                            <p class="item-intro text-muted">
+                              XI Symposium on Biomedical Engineering (SEB)
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="Stress Monitor" />
+                            <p>
+                              Developed a wearable prototype for real-time stress tracking using
+                              <strong>
+                              multimodal physiological sensors
+                              </strong>
+                              . The device monitors heart rate variability (HRV), body temperature, and
+                              <strong>
+                              Galvanic Skin Response (GSR)
+                              </strong>
+                              . By analyzing patterns in skin resistance and thermal fluctuations, the system provides users with instant biofeedback via smartphone, identifying peak stress periods and promoting self-regulation through data-driven insights.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Sensors:
+                                </strong>
+                                GSR, LM35 (Thermal), Heart Rate Pulse
+                              </li>
+                              <li>
+                                <strong>
+                                DOI:
+                                </strong>
+                                <a href="https://doi.org/10.29327/xiseb.128408" target="_blank">
+                                10.29327/xiseb.128408
+                                </a>
+                              </li>
+                              <li>
+                                <strong>
+                                Keywords:
+                                </strong>
+                                Biofeedback, Signal Processing, Wearable Tech
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h4 class="text-uppercase">Greenhouse Automated Using Microcontroller Arduino and Serial Communication</h4>
-                <p class="item-intro text-muted">XIV Conferência de Estudos em Engenharia Elétrica – CEEL 2016</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full.jpg" alt="">
-                <h5 class="text-uppercase">Abstract</h5>
-                <p>Automation in the field grew over 40% in recent years, this fact is due to the efficiency of automated productivity. Both for producers and for the control and automation engineering sector, investment in efficiency led to benefits for both sectors. In this field, automated greenhouses are worth mentioning. Due to global warming, the need to protect the crop by producers led them to join this way of culture. In this field, automated greenhouses are worth mentioning. Due to global warming, the need to protect the crop by producers led them to join this way of culture. This project intent to develop a prototype of a low-cost intelligent greenhouse that allows the producer to monitor and be informed about the situation of his plantation to optimize its development. The serial communication will allow the producer to enter the parameters that the micro controller should run. The platform used will be the Arduino. </p>
-                <p> Keywords: Microcontroller Arduino, Greehouse, monitor.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2016</li>
-                  <li>Country: Brazil</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+              <!-- Modal 6 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h4 class="text-uppercase">
+                              Electromiographic Comparison of the Rectus Femoris Muscle Between Sedentary and Non-sedentary Individuals
+                            </h4>
+                            <p class="item-intro text-muted">
+                              XI Simpósio de Engenharia Biomédica – SEB 2018
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="" />
+                            <h5 class="text-uppercase">
+                              Abstract
+                            </h5>
+                            <p>
+                              Using the artifice of collection and analysis of electromyographic signals that capture the electrical activity of muscles, one can compare the muscular contraction of individuals with different lifestyles. As the relationship between the force produced by regularly trained muscles and sedentary muscles, even when they are not of dominant members of the individual.
+                            </p>
+                            <p>
+                              Keywords: Electromyography, signal processing, biomechanics, muscles, strength.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                Date: October 2018
+                              </li>
+                              <li>
+                                Country: Brazil
+                              </li>
+                              <li>
+                                DOI: 10.29327/xiseb.128430
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2 class="text-uppercase">Graph-based Patient Similarity for Alzheimer’s Diagnosis</h2>
-                <p class="item-intro text-muted">PhD Research | University of São Paulo (USP)</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/phd-graph.jpg" alt="GNN Research">
-                <p>My doctoral research develops a paper-level GNN framework for incomplete clinical and neuroimaging data. By constructing <strong>Population Similarity Graphs</strong>, I enable relational learning between patients across heterogeneous features, including clinical markers, fMRI-derived measurements, and demographic covariates. This work emphasizes model robustness, interpretability, and early Alzheimer’s risk stratification in noisy real-world cohorts.</p>
-                <ul class="list-inline">
-                  <li><strong>Advisor:</strong> <a href="https://www.icmc.usp.br/pessoas?id=189531">Prof. André de Carvalho</a></li>
-                  <li><strong>Tech Stack:</strong> PyTorch Geometric, Python, NetworkX</li>
-                  <li><strong>Focus:</strong> Relational Learning & Multimodal Data Fusion</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times"></i> Close Project</button>
+              <!-- Modal 7 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h4 class="text-uppercase">
+                              Greenhouse Automated Using Microcontroller Arduino and Serial Communication
+                            </h4>
+                            <p class="item-intro text-muted">
+                              XIV Conferência de Estudos em Engenharia Elétrica – CEEL 2016
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/07-full.jpg" alt="" />
+                            <h5 class="text-uppercase">
+                              Abstract
+                            </h5>
+                            <p>
+                              Automation in the field grew over 40% in recent years, this fact is due to the efficiency of automated productivity. Both for producers and for the control and automation engineering sector, investment in efficiency led to benefits for both sectors. In this field, automated greenhouses are worth mentioning. Due to global warming, the need to protect the crop by producers led them to join this way of culture. In this field, automated greenhouses are worth mentioning. Due to global warming, the need to protect the crop by producers led them to join this way of culture. This project intent to develop a prototype of a low-cost intelligent greenhouse that allows the producer to monitor and be informed about the situation of his plantation to optimize its development. The serial communication will allow the producer to enter the parameters that the micro controller should run. The platform used will be the Arduino.
+                            </p>
+                            <p>
+                              Keywords: Microcontroller Arduino, Greehouse, monitor.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                Date: October 2016
+                              </li>
+                              <li>
+                                Country: Brazil
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
-
-</body>
-
-</html>
+              <!-- Modal 8 -->
+              <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              Graph-based Patient Similarity for Alzheimer’s Diagnosis
+                            </h2>
+                            <p class="item-intro text-muted">
+                              PhD Research | University of São Paulo (USP)
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/phd-graph.jpg" alt="GNN Research" />
+                            <p>
+                              My doctoral research develops a paper-level GNN framework for incomplete clinical and neuroimaging data. By constructing
+                              <strong>
+                              Population Similarity Graphs
+                              </strong>
+                              , I enable relational learning between patients across heterogeneous features, including clinical markers, fMRI-derived measurements, and demographic covariates. This work emphasizes model robustness, interpretability, and early Alzheimer’s risk stratification in noisy real-world cohorts.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Advisor:
+                                </strong>
+                                <a href="https://www.icmc.usp.br/pessoas?id=189531">
+                                Prof. André de Carvalho
+                                </a>
+                              </li>
+                              <li>
+                                <strong>
+                                Tech Stack:
+                                </strong>
+                                PyTorch Geometric, Python, NetworkX
+                              </li>
+                              <li>
+                                <strong>
+                                Focus:
+                                </strong>
+                                Relational Learning
+                                &
+                                Multimodal Data Fusion
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Bootstrap core JavaScript -->
+              <script src="vendor/jquery/jquery.min.js">
+              </script>
+              <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
+              </script>
+              <!-- Plugin JavaScript -->
+              <script src="vendor/jquery-easing/jquery.easing.min.js">
+              </script>
+              <!-- Contact form JavaScript -->
+              <script src="js/jqBootstrapValidation.js">
+              </script>
+              <script src="js/contact_me.js">
+              </script>
+              <!-- Custom scripts for this template -->
+              <script src="js/agency.min.js">
+              </script>
+            </body>
+          </html>
