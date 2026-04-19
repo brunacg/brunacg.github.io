@@ -198,82 +198,67 @@
     <!-- Portfolio Grid é na verdade Projects -->
     <section class="bg-light page-section" id="portfolio">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
+        <div class="row text-center mb-5">
+          <div class="col-lg-12">
             <h2 class="section-heading text-uppercase">
-              Featured Projects
+              Projects
             </h2>
-            <h4 class="section-subheading text-muted">
-              Top research and technical projects aligned with neuroimaging AI.
-            </h4>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item mb-4">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x">
-                </i>
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x">
+                  </i>
+                </div>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="Learning from Incomplete Neuroimaging Data" />
+              <div class="p-4 bg-white shadow-sm rounded">
+                <h4>
+                  Alzheimer’s GNN
+                </h4>
+                <p class="text-muted small">
+                  Graph Neural Networks for Clinical Diagnosis
+                </p>
+              </div>
             </a>
-            <div class="portfolio-caption">
-              <h4>
-                Learning from Incomplete Neuroimaging Data
-              </h4>
-              <p class="text-muted">
-                Developing ML methods for handling missing and heterogeneous clinical data, with a focus on fMRI analysis and ASD-related patterns.
-              </p>
-              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
-              GitHub
-              </a>
-            </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x">
-                </i>
+          <div class="col-md-4 col-sm-6 portfolio-item mb-4">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModalUnico">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x">
+                  </i>
+                </div>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="fMRI Correlation Analysis" />
+              <div class="p-4 bg-white shadow-sm rounded">
+                <h4>
+                  GANs for Identity
+                </h4>
+                <p class="text-muted small">
+                  Synthetic Data Generation at unico IDTech
+                </p>
+              </div>
             </a>
-            <div class="portfolio-caption">
-              <h4>
-                fMRI Correlation Analysis
-              </h4>
-              <p class="text-muted">
-                Applied correlation-based analysis to functional MRI data, investigating brain activity patterns with high-dimensional signal processing.
-              </p>
-              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
-              GitHub
-              </a>
-            </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x">
-                </i>
+          <div class="col-md-4 col-sm-6 portfolio-item mb-4">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModalBristol">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x">
+                  </i>
+                </div>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="3D Trajectory Estimation with ICP" />
+              <div class="p-4 bg-white shadow-sm rounded">
+                <h4>
+                  fMRI Connectivity
+                </h4>
+                <p class="text-muted small">
+                  Neuroscience Research at Univ. of Bristol
+                </p>
+              </div>
             </a>
-            <div class="portfolio-caption">
-              <h4>
-                3D Trajectory Estimation with ICP
-              </h4>
-              <p class="text-muted">
-                Implemented ICP from scratch to estimate trajectories from LiDAR point clouds, with evaluation against ground-truth and error accumulation analysis.
-              </p>
-              <a href="https://github.com/brunacg?tab=repositories" target="_blank">
-              GitHub
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -384,33 +369,58 @@
                 <br />
                 Polytech Marseille — France
               </li>
-              <section class="page-section" id="publications">
+              <section id="publications" class="page-section">
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-12 text-center">
                       <h2 class="section-heading text-uppercase">
-                        Publications
-                        &
-                        Work
+                        Selected Publications
                       </h2>
-                      <h4 class="section-subheading text-muted">
-                        Evidence of research activity and technical output.
-                      </h4>
+                      <h3 class="section-subheading text-muted">
+                        Scientific contributions in AI and Bioengineering.
+                      </h3>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                      <ul class="list-unstyled text-muted">
-                        <li>
-                          • fMRI Correlation Analysis — Undergraduate Thesis
-                        </li>
-                        <li>
-                          • Research projects in neuroimaging and machine learning
-                        </li>
-                        <li>
-                          • Ongoing work on ML for incomplete clinical data
-                        </li>
-                      </ul>
+                    <div class="col-lg-10 mx-auto">
+                      <div class="pub-item mb-4 pb-3 border-bottom">
+                        <span class="badge badge-primary">
+                          Journal
+                        </span>
+                        <h5 class="mt-2">
+                          Serious Game for motor rehabilitation using electromyography signals
+                        </h5>
+                        <p class="text-muted mb-1">
+                          Oliveira, F. A. C.; <strong>Guedes, B. C.</strong>; Oliveira, S. R. J.
+                        </p>
+                        <p class="small">
+                          <em>
+                          5th Brazilian Congress of Electromyography and Kinesiology
+                          </em>
+                        </p>
+                        <a href="https://doi.org/10.29327/cobecseb.78900" target="_blank" class="btn btn-sm btn-outline-dark">
+                          DOI
+                        </a>
+                      </div>
+                      <div class="pub-item mb-4 pb-3 border-bottom">
+                        <span class="badge badge-secondary">
+                          Symposium
+                        </span>
+                        <h5 class="mt-2">
+                          Device for monitoring stress through biofeedback
+                        </h5>
+                        <p class="text-muted mb-1">
+                          Oliveira, F. A. C.; <strong>Guedes, B. C.</strong>; Oliveira, S. R. J.
+                        </p>
+                        <p class="small">
+                          <em>
+                          XI Symposium on Biomedical Engineering
+                          </em>
+                        </p>
+                        <a href="https://doi.org/10.29327/xiseb.128408" target="_blank" class="btn btn-sm btn-outline-dark">
+                          DOI
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -664,6 +674,106 @@
                   </div>
                 </div>
               </section>
+              <!-- Modal Unico -->
+              <div class="portfolio-modal modal fade" id="portfolioModalUnico" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              GANs for Identity Verification
+                            </h2>
+                            <p class="item-intro text-muted">
+                              Synthetic Data Generation at unico IDTech
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/unico.jpg" alt="GANs Project" />
+                            <p>
+                              Developed Generative Adversarial Networks (GANs) to generate synthetic biometric data for identity verification systems. This work addressed data scarcity in training robust models for facial recognition and fingerprint analysis, improving model generalization and reducing privacy concerns.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Technologies:
+                                </strong>
+                                PyTorch, GANs, Computer Vision
+                              </li>
+                              <li>
+                                <strong>
+                                Impact:
+                                </strong>
+                                Enhanced data augmentation for secure identity systems
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Bristol -->
+              <div class="portfolio-modal modal fade" id="portfolioModalBristol" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                      <div class="lr">
+                        <div class="rl">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="modal-body">
+                            <h2 class="text-uppercase">
+                              fMRI Connectivity Analysis
+                            </h2>
+                            <p class="item-intro text-muted">
+                              Neuroscience Research at University of Bristol
+                            </p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/bristol.jpg" alt="fMRI Project" />
+                            <p>
+                              Conducted advanced analysis of functional MRI data to study brain connectivity patterns. Applied machine learning techniques to identify functional networks and their correlations with cognitive tasks, contributing to understanding neural mechanisms in healthy and pathological conditions.
+                            </p>
+                            <ul class="list-inline">
+                              <li>
+                                <strong>
+                                Methods:
+                                </strong>
+                                fMRI, Connectivity Analysis, Machine Learning
+                              </li>
+                              <li>
+                                <strong>
+                                Focus:
+                                </strong>
+                                Neural network dynamics and cognitive neuroscience
+                              </li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                              <i class="fas fa-times">
+                              </i>
+                              Close Project
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Footer -->
               <footer class="footer">
                 <div class="container">
