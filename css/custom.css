@@ -29,6 +29,7 @@ a:hover {
 header.masthead {
   background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
   text-align: center;
+  color: #333;
 }
 
 header.masthead .intro-text {
@@ -36,11 +37,33 @@ header.masthead .intro-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
-header.masthead .intro-heading {
+header.masthead .intro-text .intro-heading,
+header.masthead .intro-text .intro-lead-in {
+  color: #222;
+}
+
+header.masthead .intro-text .intro-heading {
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-weight: 400;
+}
+
+header.masthead .intro-text .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  margin: 0 8px 12px;
+}
+
+header.masthead .intro-text .btn.btn-xl {
+  padding: 16px 32px;
 }
 
 /* Button improvements */
