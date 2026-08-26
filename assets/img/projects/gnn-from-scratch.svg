@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 168" role="img" aria-labelledby="title desc">
+  <title id="title">Graph neural network diagram</title>
+  <desc id="desc">Graph nodes connected by edges flow into two message-passing layers.</desc>
+  <rect x="213" y="32" rx="10" width="48" height="104" fill="#304d7a" fill-opacity=".07" stroke="#304d7a" stroke-opacity=".2"/>
+  <rect x="278" y="48" rx="10" width="48" height="72" fill="#304d7a" fill-opacity=".07" stroke="#304d7a" stroke-opacity=".2"/>
+  <g stroke="#9ba8b9" stroke-width="1.6" opacity=".72">
+    <path d="M55 48 111 39M55 48 86 91M111 39 145 79M86 91 145 79M86 91 119 127M145 79 119 127M145 79 182 112"/>
+  </g>
+  <g fill="#fff" stroke="#304d7a" stroke-width="2">
+    <circle cx="55" cy="48" r="8"/><circle cx="111" cy="39" r="8"/><circle cx="86" cy="91" r="8"/>
+    <circle cx="119" cy="127" r="8"/><circle cx="182" cy="112" r="8"/>
+  </g>
+  <circle cx="145" cy="79" r="9" fill="#fff1e4" stroke="#d96d10" stroke-width="2"/>
+  <path d="M190 84h17m-6-5 6 5-6 5" fill="none" stroke="#d96d10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#304d7a"><circle cx="237" cy="58" r="5"/><circle cx="237" cy="110" r="5"/><circle cx="302" cy="68" r="5"/><circle cx="302" cy="100" r="5"/></g>
+  <g fill="#d96d10"><circle cx="237" cy="84" r="5"/><circle cx="302" cy="84" r="5"/></g>
+  <g stroke="#9ba8b9" stroke-width="1.3"><path d="m242 58 36 10m-36 16h36m-36 26 36-10"/></g>
+</svg>

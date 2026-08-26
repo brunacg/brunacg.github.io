@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 168" role="img" aria-labelledby="title desc">
+  <title id="title">fMRI connectivity diagram</title>
+  <desc id="desc">A functional-connectivity matrix points to a simplified brain network.</desc>
+  <g transform="translate(36 35)">
+    <g fill="#304d7a"><rect width="18" height="18"/><rect x="20" y="20" width="18" height="18"/><rect x="40" y="40" width="18" height="18"/><rect x="60" y="60" width="18" height="18"/><rect x="80" y="80" width="18" height="18"/></g>
+    <g fill="#8fa8c9"><rect x="20" width="18" height="18"/><rect x="80" width="18" height="18"/><rect y="20" width="18" height="18"/><rect x="40" y="20" width="18" height="18"/><rect x="20" y="40" width="18" height="18"/><rect x="60" y="40" width="18" height="18"/><rect x="40" y="60" width="18" height="18"/><rect x="80" y="60" width="18" height="18"/><rect y="80" width="18" height="18"/><rect x="60" y="80" width="18" height="18"/></g>
+    <g fill="#e6edf6"><rect x="40" width="18" height="18"/><rect x="60" y="20" width="18" height="18"/><rect x="80" y="20" width="18" height="18"/><rect y="40" width="18" height="18"/><rect x="80" y="40" width="18" height="18"/><rect x="20" y="60" width="18" height="18"/><rect x="20" y="80" width="18" height="18"/><rect x="40" y="80" width="18" height="18"/></g>
+    <g fill="#f08a24"><rect x="60" width="18" height="18"/><rect y="60" width="18" height="18"/></g>
+  </g>
+  <path d="M185 87c0-35 25-59 62-59 34 0 63 23 63 56 0 29-18 51-45 55-20 4-36-5-46-16-14 3-28-10-28-24-5-3-6-8-6-12Z" fill="none" stroke="#304d7a" stroke-width="2" opacity=".82"/>
+  <g stroke="#91a1b7" stroke-width="1.2" opacity=".72"><path d="m214 67 41-13 31 22-49 25-23-34m41-13-18 47 33 18 16-43m-49 25 33 18"/></g>
+  <g fill="#fff" stroke="#304d7a" stroke-width="1.5"><circle cx="214" cy="67" r="5"/><circle cx="286" cy="76" r="5"/><circle cx="237" cy="101" r="5"/></g>
+  <g fill="#fff1e4" stroke="#d96d10" stroke-width="1.5"><circle cx="255" cy="54" r="6"/><circle cx="270" cy="119" r="6"/></g>
+  <path d="M149 84h26m-6-5 6 5-6 5" fill="none" stroke="#d96d10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
