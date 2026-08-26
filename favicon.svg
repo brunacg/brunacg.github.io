@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Graph network icon">
+  <rect width="64" height="64" rx="14" fill="#0b1220"/>
+  <g stroke="#99abc6" stroke-width="3" stroke-linecap="round">
+    <path d="M18 20L32 32L47 17M32 32L47 47M18 45L32 32"/>
+  </g>
+  <circle cx="32" cy="32" r="7" fill="#f08a24"/>
+  <circle cx="18" cy="20" r="5" fill="#f4f7fb"/>
+  <circle cx="47" cy="17" r="5" fill="#f4f7fb"/>
+  <circle cx="47" cy="47" r="5" fill="#f4f7fb"/>
+  <circle cx="18" cy="45" r="5" fill="#f4f7fb"/>
+</svg>

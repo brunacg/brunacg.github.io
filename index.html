@@ -3,27 +3,47 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
   <meta name="description"
-    content="Academic website of Bruna Campos Guedes, PhD candidate in Computer Science at ICMC-USP. Research in relational machine learning, graph neural networks, and reliable AI for healthcare." />
+    content="Academic website of Bruna Campos Guedes, PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
   <meta name="author" content="Bruna Campos Guedes" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://brunacg.github.io/" />
 
-  <meta property="og:title" content="Bruna Campos Guedes | Relational Machine Learning & Graph Neural Networks" />
+  <meta property="og:site_name" content="Bruna Campos Guedes" />
+  <meta property="og:title" content="Bruna Campos Guedes | AI, Graph Learning & Healthcare" />
   <meta property="og:description"
     content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://brunacg.github.io/" />
+  <meta property="og:image" content="https://brunacg.github.io/og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Bruna Campos Guedes — PhD candidate researching relational machine learning, graph neural networks, and AI for healthcare." />
+  <meta property="og:locale" content="en_US" />
 
-  <title>Bruna C. Guedes | AI & Graph Learning</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bruna Campos Guedes | AI, Graph Learning & Healthcare" />
+  <meta name="twitter:description"
+    content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
+  <meta name="twitter:image" content="https://brunacg.github.io/og-preview.png" />
+  <meta name="twitter:image:alt" content="Bruna Campos Guedes — academic researcher profile." />
+
+  <title>Bruna Campos Guedes | AI, GNNs & Healthcare</title>
   <meta name="theme-color" content="#0b1220" />
-  <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cg stroke='%2399abc6' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M18 20L32 32L47 17M32 32L47 47M18 45L32 32'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='7' fill='%23f08a24'/%3E%3Ccircle cx='18' cy='20' r='5' fill='%23f4f7fb'/%3E%3Ccircle cx='47' cy='17' r='5' fill='%23f4f7fb'/%3E%3Ccircle cx='47' cy='47' r='5' fill='%23f4f7fb'/%3E%3Ccircle cx='18' cy='45' r='5' fill='%23f4f7fb'/%3E%3C/svg%3E" />
+  <meta name="apple-mobile-web-app-title" content="Bruna C. Guedes" />
 
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
   <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800|Source+Serif+4:400,500,600,400italic&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link href="css/agency.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
@@ -47,6 +67,49 @@
     html {
       scroll-behavior: smooth;
     }
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 2000;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #0b1220;
+      font-weight: 700;
+      transform: translateY(-160%);
+      transition: transform 0.15s ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    :focus-visible {
+      outline: 3px solid #ffb45f;
+      outline-offset: 3px;
+    }
+
+    section[id] {
+      scroll-margin-top: 76px;
+    }
+
+    .footer-separator {
+      margin: 0 0.35rem;
+      opacity: 0.6;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .pub-card:hover { transform: none; }
+    }
+
 
     body {
       font-family: "Inter", sans-serif;
@@ -61,11 +124,11 @@
     }
 
     a {
-      color: #d96f12;
+      color: #b85a0a;
     }
 
     a:hover {
-      color: #b85a0a;
+      color: #8f4305;
     }
 
     h1,
@@ -256,13 +319,16 @@
     }
 
     .btn-primary {
-      background: var(--accent);
-      border-color: var(--accent);
+      background: #b85a0a;
+      border-color: #b85a0a;
+      color: #fff;
     }
 
-    .btn-primary:hover {
-      background: #db761a;
-      border-color: #db761a;
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background: #8f4305;
+      border-color: #8f4305;
+      color: #fff;
     }
 
     .btn-ghost {
@@ -536,9 +602,9 @@
 
     .academic-link:hover,
     .academic-link:focus {
-      color: var(--accent);
+      color: #a44d05;
       text-decoration: none;
-      border-bottom-color: rgba(252, 131, 25, 0.45);
+      border-bottom-color: rgba(164, 77, 5, 0.45);
     }
 
     .academic-link .fa-external-link-alt {
@@ -567,7 +633,7 @@
       box-shadow: 0 14px 35px rgba(53, 45, 30, 0.08);
     }
 
-    .pub-card h5 {
+    .pub-card h4 {
       line-height: 1.45;
       font-size: 1rem;
       margin-bottom: 0.75rem;
@@ -775,16 +841,61 @@
       }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bruna Campos Guedes",
+  "url": "https://brunacg.github.io/",
+  "email": "mailto:brunacampos.g@usp.br",
+  "jobTitle": "PhD Candidate in Computer Science (Artificial Intelligence)",
+  "identifier": "https://orcid.org/0000-0002-4384-0056",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of São Paulo",
+    "department": "Institute of Mathematics and Computer Sciences (ICMC)",
+    "url": "https://www.icmc.usp.br"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Federal University of Uberlândia",
+      "url": "https://www.ufu.br/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Aix-Marseille Université",
+      "url": "https://www.univ-amu.fr/"
+    }
+  ],
+  "sameAs": [
+    "https://orcid.org/0000-0002-4384-0056",
+    "https://github.com/brunacg",
+    "https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en",
+    "https://www.linkedin.com/in/brunacamposguedes/",
+    "http://lattes.cnpq.br/5098861497873665"
+  ],
+  "knowsAbout": [
+    "Machine Learning",
+    "Graph Neural Networks",
+    "Relational Learning",
+    "Artificial Intelligence for Healthcare",
+    "Population Similarity Graphs",
+    "Computational Neuroscience"
+  ]
+}
+  </script>
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" aria-label="Primary navigation">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Bruna C. Guedes</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars"></i>
+        Menu <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
@@ -798,27 +909,28 @@
     </div>
   </nav>
 
+  <main id="main-content">
   <header class="masthead">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><i class="fas fa-flask"></i> PhD Candidate · ICMC-USP</div>
+          <div class="eyebrow"><i class="fas fa-flask" aria-hidden="true"></i> PhD Candidate · ICMC-USP</div>
           <h1 class="hero-name">Bruna Campos Guedes</h1>
           <p class="hero-statement">
             I study when relational information between individuals can improve machine learning on small,
             heterogeneous healthcare datasets — and how to evaluate those models reliably.
           </p>
           <div class="hero-meta">
-            <span><i class="fas fa-map-marker-alt"></i>São Carlos, Brazil</span>
-            <span><i class="fas fa-network-wired"></i>Relational ML & Graph Neural Networks</span>
-            <span><i class="fas fa-heartbeat"></i>AI for Healthcare</span>
+            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>São Carlos, Brazil</span>
+            <span><i class="fas fa-network-wired" aria-hidden="true"></i>Relational ML & Graph Neural Networks</span>
+            <span><i class="fas fa-heartbeat" aria-hidden="true"></i>AI for Healthcare</span>
           </div>
           <div class="hero-actions">
             <a class="btn btn-primary js-scroll-trigger" href="#research">Explore Research</a>
             <a class="btn btn-ghost" href="https://drive.google.com/file/d/1fVLgzw0kVzcNrow3oSQdUiePDtPNPHI4/view?usp=sharing"
-              target="_blank" rel="noopener noreferrer">CV</a>
+              target="_blank" rel="noopener noreferrer" aria-label="Open curriculum vitae in a new tab">CV</a>
             <a class="btn btn-ghost" href="https://orcid.org/0000-0002-4384-0056" target="_blank"
-              rel="noopener noreferrer">ORCID</a>
+              rel="noopener noreferrer" aria-label="Open ORCID profile in a new tab">ORCID</a>
           </div>
         </div>
       </div>
@@ -830,7 +942,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">About</h2>
-          <h3 class="section-subheading">Machine learning across biomedical engineering, neuroscience, and real-world systems.</h3>
+          <p class="section-subheading">Machine learning across biomedical engineering, neuroscience, and real-world systems.</p>
         </div>
       </div>
 
@@ -883,7 +995,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Current Research</h2>
-          <h3 class="section-subheading">Population similarity graphs for reliable learning from heterogeneous clinical data.</h3>
+          <p class="section-subheading">Population similarity graphs for reliable learning from heterogeneous clinical data.</p>
         </div>
       </div>
 
@@ -899,38 +1011,38 @@
             <div class="research-pipeline" aria-label="Current research workflow">
               <div class="pipeline-step">
                 <div class="pipeline-number">01</div>
-                <i class="fas fa-table"></i>
+                <i class="fas fa-table" aria-hidden="true"></i>
                 <h4>Heterogeneous data</h4>
                 <p>Clinical and sociodemographic participant variables.</p>
               </div>
               <div class="pipeline-step">
                 <div class="pipeline-number">02</div>
-                <i class="fas fa-layer-group"></i>
+                <i class="fas fa-layer-group" aria-hidden="true"></i>
                 <h4>Representation</h4>
                 <p>Participant-level latent representations from heterogeneous inputs.</p>
               </div>
               <div class="pipeline-step">
                 <div class="pipeline-number">03</div>
-                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
                 <h4>Similarity graph</h4>
                 <p>Participants connected according to learned or defined similarity.</p>
               </div>
               <div class="pipeline-step">
                 <div class="pipeline-number">04</div>
-                <i class="fas fa-network-wired"></i>
+                <i class="fas fa-network-wired" aria-hidden="true"></i>
                 <h4>Graph learning</h4>
                 <p>Relational information propagated with graph neural networks.</p>
               </div>
               <div class="pipeline-step">
                 <div class="pipeline-number">05</div>
-                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
                 <h4>Evaluation</h4>
                 <p>Cognitive-status prediction under leakage-controlled validation.</p>
               </div>
             </div>
 
             <div class="inductive-note">
-              <i class="fas fa-user-plus mr-2"></i>
+              <i class="fas fa-user-plus mr-2" aria-hidden="true"></i>
               <strong>Inductive inference:</strong> new participants are connected to the learned population structure and evaluated without rebuilding the full training pipeline.
             </div>
           </div>
@@ -985,7 +1097,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Education & Experience</h2>
-          <h3 class="section-subheading">A path from biomedical engineering to relational machine learning.</h3>
+          <p class="section-subheading">A path from biomedical engineering to relational machine learning.</p>
         </div>
       </div>
 
@@ -1004,7 +1116,7 @@
         <div class="timeline-item">
           <div class="timeline-date">2021 – 2023</div>
           <h4>Junior Data Scientist</h4>
-          <h5 class="timeline-org"><a class="academic-link" href="https://www.unico.io/pt" target="_blank" rel="noopener">unico IDTech <i class="fas fa-external-link-alt ml-1" style="font-size: 0.75em;"></i></a></h5>
+          <h5><a class="academic-link" href="https://www.unico.io/pt" target="_blank" rel="noopener noreferrer">unico IDTech <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
           <p class="text-muted small mb-0">
             Developed and evaluated machine-learning systems for large-scale identity verification, working with class
             imbalance, data scarcity, latency constraints, and GAN-based synthetic-data generation.
@@ -1049,7 +1161,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Selected Publications</h2>
-          <h3 class="section-subheading">Early work across biomedical engineering, signal processing, and mathematical modeling.</h3>
+          <p class="section-subheading">Early work across biomedical engineering, signal processing, and mathematical modeling.</p>
         </div>
       </div>
 
@@ -1057,43 +1169,43 @@
         <div class="col-md-6 mb-4">
           <div class="pub-card">
             <div class="pub-meta"><span>2019</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h5 lang="pt-BR">Desenvolvimento de um sistema de controle para diluição automática de desinfetantes</h5>
+            <h4 lang="pt-BR">Desenvolvimento de um sistema de controle para diluição automática de desinfetantes</h4>
             <p class="small text-muted mb-1">XII Simpósio de Engenharia Biomédica / IX Simpósio de Instrumentação e Imagens Médicas.</p>
-            <a class="doi-link" href="https://doi.org/10.5281/zenodo.3461042" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a class="doi-link" href="https://doi.org/10.5281/zenodo.3461042" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Desenvolvimento de um sistema de controle para diluição automática de desinfetantes"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
           </div>
         </div>
 
         <div class="col-md-6 mb-4">
           <div class="pub-card">
             <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h5 lang="pt-BR">Dispositivo para monitoramento de estresse através de biofeedback</h5>
+            <h4 lang="pt-BR">Dispositivo para monitoramento de estresse através de biofeedback</h4>
             <p class="small text-muted mb-1">XI Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128408" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128408" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Dispositivo para monitoramento de estresse através de biofeedback"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
           </div>
         </div>
 
         <div class="col-md-6 mb-4">
           <div class="pub-card">
             <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h5 lang="pt-BR">Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários</h5>
+            <h4 lang="pt-BR">Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários</h4>
             <p class="small text-muted mb-1">XI Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128430" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128430" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
           </div>
         </div>
 
         <div class="col-md-6 mb-4">
           <div class="pub-card">
             <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h5 lang="pt-BR">Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos</h5>
+            <h4 lang="pt-BR">Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos</h4>
             <p class="small text-muted mb-1">V Congresso Brasileiro de Eletromiografia e Cinesiologia / X Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/cobecseb.78900" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> DOI</a>
+            <a class="doi-link" href="https://doi.org/10.29327/cobecseb.78900" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
           </div>
         </div>
 
         <div class="col-md-6 mb-4">
           <div class="pub-card">
             <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h5 lang="pt-BR">O Problema de Geometria de Distâncias Moleculares Discretizável</h5>
+            <h4 lang="pt-BR">O Problema de Geometria de Distâncias Moleculares Discretizável</h4>
             <p class="small text-muted mb-0">XVII Semana da Matemática / VII Semana da Estatística, Federal University of Uberlândia.</p>
           </div>
         </div>
@@ -1101,7 +1213,7 @@
         <div class="col-md-6 mb-4">
           <div class="pub-card d-flex flex-column justify-content-center text-center">
             <i class="fas fa-book-open fa-2x mb-3" style="color:#304d7a;"></i>
-            <h5>Full research record</h5>
+            <h4>Full research record</h4>
             <p class="small text-muted">Additional conference work and abstracts are available through my research profiles.</p>
             <p class="mb-0 small">
               <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
@@ -1126,21 +1238,21 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="expertise-card">
-            <i class="fas fa-network-wired"></i>
+            <i class="fas fa-network-wired" aria-hidden="true"></i>
             <h4>Machine Learning</h4>
             <p class="text-muted small mb-0">PyTorch · PyTorch Geometric · scikit-learn · XGBoost</p>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="expertise-card">
-            <i class="fas fa-code"></i>
+            <i class="fas fa-code" aria-hidden="true"></i>
             <h4>Scientific Computing</h4>
             <p class="text-muted small mb-0">Python · MATLAB · C++ · NumPy · Pandas · NetworkX</p>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="expertise-card">
-            <i class="fas fa-vial"></i>
+            <i class="fas fa-vial" aria-hidden="true"></i>
             <h4>Experimental Methods</h4>
             <p class="text-muted small mb-0">Nested cross-validation · Robustness analysis · Ablations · Model explainability</p>
           </div>
@@ -1154,25 +1266,25 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Beyond Research</h2>
-          <h3 class="section-subheading">Community involvement, recognition, and languages that complement my academic profile.</h3>
+          <p class="section-subheading">Community involvement, recognition, and languages that complement my academic profile.</p>
         </div>
       </div>
       <div class="row text-center">
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-users mr-2"></i>Community</h4>
+            <h4 class="font-weight-bold"><i class="fas fa-users mr-2" aria-hidden="true"></i>Community</h4>
             <p class="text-muted small mb-0">Volunteer Project Assistant at <strong>Data Girls</strong> (2023–2025), supporting outreach and mentorship initiatives for women in technology.</p>
           </div>
         </div>
         <div class="col-md-4 mb-4 mb-md-0">
           <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-trophy mr-2"></i>Recognition</h4>
+            <h4 class="font-weight-bold"><i class="fas fa-trophy mr-2" aria-hidden="true"></i>Recognition</h4>
             <p class="text-muted small mb-0">Winner of the 2017 <strong>Innovations in Electromyography &amp; Kinesiology</strong> competition; OBMEP bronze medalist (2010, 2015) with three honorable mentions.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-language mr-2"></i>Languages</h4>
+            <h4 class="font-weight-bold"><i class="fas fa-language mr-2" aria-hidden="true"></i>Languages</h4>
             <p class="text-muted small mb-0">Portuguese (Native) · English (B2) · French (B1)</p>
           </div>
         </div>
@@ -1185,7 +1297,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Contact</h2>
-          <h3 class="section-subheading">Research collaborations and academic inquiries.</h3>
+          <p class="section-subheading">Research collaborations and academic inquiries.</p>
         </div>
       </div>
       <div class="row text-center">
@@ -1217,16 +1329,18 @@
     </div>
   </section>
 
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
-          <span class="copyright">&copy; 2026 Bruna Campos Guedes</span>
+          <span class="copyright">&copy; 2026 Bruna Campos Guedes <span class="footer-separator">·</span> Last updated August 2026</span>
         </div>
         <div class="col-md-4 text-center mb-3 mb-md-0">
           <ul class="list-inline social-buttons mb-0">
             <li class="list-inline-item"><a href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a></li>
+            <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a></li>
             <li class="list-inline-item"><a href="https://www.linkedin.com/in/brunacamposguedes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
@@ -1239,10 +1353,10 @@
     </div>
   </footer>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/agency.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js" defer></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js" defer></script>
+  <script src="js/agency.min.js" defer></script>
 </body>
 
 </html>
