@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-  <meta name="description"
-    content="Academic website of Bruna Campos Guedes, PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Academic website of Bruna Campos Guedes, PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
   <meta name="author" content="Bruna Campos Guedes" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#0a1020" />
+
   <link rel="canonical" href="https://brunacg.github.io/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <meta property="og:site_name" content="Bruna Campos Guedes" />
-  <meta property="og:title" content="Bruna Campos Guedes | AI, Graph Learning & Healthcare" />
-  <meta property="og:description"
-    content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
+  <meta property="og:title" content="Bruna Campos Guedes | Relational ML, GNNs & Healthcare AI" />
+  <meta property="og:description" content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://brunacg.github.io/" />
   <meta property="og:image" content="https://brunacg.github.io/og-preview.png" />
@@ -24,547 +27,710 @@
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bruna Campos Guedes | AI, Graph Learning & Healthcare" />
-  <meta name="twitter:description"
-    content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
+  <meta name="twitter:title" content="Bruna Campos Guedes | Relational ML, GNNs & Healthcare AI" />
+  <meta name="twitter:description" content="PhD candidate at ICMC-USP researching relational machine learning, graph neural networks, and reliable AI for healthcare." />
   <meta name="twitter:image" content="https://brunacg.github.io/og-preview.png" />
-  <meta name="twitter:image:alt" content="Bruna Campos Guedes — academic researcher profile." />
 
-  <title>Bruna Campos Guedes | AI, GNNs & Healthcare</title>
-  <meta name="theme-color" content="#0b1220" />
-  <meta name="apple-mobile-web-app-title" content="Bruna C. Guedes" />
-
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <title>Bruna Campos Guedes | Relational ML, GNNs & Healthcare AI</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="preconnect" href="https://code.jquery.com" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <style>
     :root {
+      --navy: #0a1020;
+      --navy-2: #121d33;
       --ink: #172033;
-      --ink-soft: #536074;
-      --navy: #0b1220;
-      --navy-2: #16223a;
+      --muted: #667085;
       --paper: #ffffff;
-      --paper-alt: #f6f7f9;
-      --paper-warm: #fbfaf7;
-      --line: #e6e9ee;
-      --accent: #f08a24;
-      --accent-soft: #fff1e4;
-      --blue-soft: #edf4ff;
-      --radius: 18px;
-      --shadow: 0 18px 45px rgba(12, 25, 48, 0.08);
+      --soft: #f6f7f9;
+      --warm: #fbfaf7;
+      --line: #e7e9ee;
+      --accent: #e97a18;
+      --accent-dark: #b85608;
+      --accent-soft: #fff0e1;
+      --blue: #2d4b78;
+      --blue-soft: #edf3fb;
+      --radius: 20px;
+      --shadow: 0 18px 48px rgba(10, 16, 32, 0.08);
+      --max: 1160px;
     }
+
+    *, *::before, *::after { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 84px;
     }
-    .skip-link {
-      position: fixed;
-      top: 0.75rem;
-      left: 0.75rem;
-      z-index: 2000;
-      padding: 0.7rem 1rem;
-      border-radius: 10px;
-      background: #ffffff;
-      color: #0b1220;
-      font-weight: 700;
-      transform: translateY(-160%);
-      transition: transform 0.15s ease;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-    }
-
-    .skip-link:focus {
-      transform: translateY(0);
-    }
-
-    :focus-visible {
-      outline: 3px solid #ffb45f;
-      outline-offset: 3px;
-    }
-
-    section[id] {
-      scroll-margin-top: 76px;
-    }
-
-    .footer-separator {
-      margin: 0 0.35rem;
-      opacity: 0.6;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-      .pub-card:hover { transform: none; }
-    }
-
 
     body {
+      margin: 0;
       font-family: "Inter", sans-serif;
       color: var(--ink);
       background: var(--paper);
-      line-height: 1.75;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
-    p,
-    .text-muted {
-      color: var(--ink-soft) !important;
+    img, svg { display: block; max-width: 100%; }
+    button, input, textarea, select { font: inherit; }
+    a { color: inherit; }
+
+    .container {
+      width: min(calc(100% - 2.5rem), var(--max));
+      margin-inline: auto;
     }
 
-    a {
-      color: #b85a0a;
+    .skip-link {
+      position: fixed;
+      z-index: 2000;
+      top: 0.75rem;
+      left: 0.75rem;
+      transform: translateY(-160%);
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(0,0,0,.18);
+      transition: transform .15s ease;
     }
 
-    a:hover {
-      color: #8f4305;
+    .skip-link:focus { transform: translateY(0); }
+
+    :focus-visible {
+      outline: 3px solid #ffb260;
+      outline-offset: 3px;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .navbar-brand,
-    .btn {
-      font-family: "Inter", sans-serif;
+    /* ---------------- Navigation ---------------- */
+    .site-nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background: rgba(10, 16, 32, .9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
 
-    .page-section {
-      padding: 96px 0;
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
     }
 
-    .section-heading {
-      font-size: 2rem !important;
-      font-weight: 750 !important;
-      letter-spacing: -0.03em;
-      text-transform: none !important;
-      margin-bottom: 0.8rem !important;
-      color: var(--ink);
+    .brand {
+      color: #fff;
+      font-size: .98rem;
+      font-weight: 750;
+      letter-spacing: -.02em;
+      text-decoration: none;
+      white-space: nowrap;
     }
 
-    .section-subheading {
-      max-width: 760px;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      margin-bottom: 3.4rem !important;
-      font-family: "Source Serif 4", serif !important;
-      font-size: 1.1rem !important;
-      line-height: 1.65;
-      font-style: normal !important;
-      color: #6d7685 !important;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.7rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: rgba(255,255,255,.72);
+      font-size: .74rem;
+      font-weight: 650;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color .18s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: -.55rem;
+      height: 2px;
+      background: var(--accent);
+      transition: right .18s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: #fff; }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after { right: 0; }
+
+    .menu-button {
+      display: none;
+      align-items: center;
+      gap: .5rem;
+      padding: .62rem .78rem;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      color: #fff;
+      cursor: pointer;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    /* ---------------- Hero ---------------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 760px;
+      padding: 150px 0 96px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      background:
+        radial-gradient(circle at 82% 22%, rgba(233,122,24,.18), transparent 28%),
+        radial-gradient(circle at 16% 78%, rgba(66,110,190,.16), transparent 27%),
+        linear-gradient(135deg, #08101e 0%, #0d1729 48%, #17243c 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .25;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle at 17% 23%, rgba(255,255,255,.6) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 74% 34%, rgba(255,255,255,.5) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 38% 79%, rgba(255,255,255,.4) 0 1px, transparent 1.6px);
+      background-size: 190px 190px, 230px 230px, 260px 260px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(330px, .85fr);
+      gap: clamp(3rem, 7vw, 7rem);
+      align-items: center;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 0.78rem;
+      gap: .5rem;
+      padding: .45rem .76rem;
+      margin-bottom: 1.35rem;
+      border: 1px solid rgba(255,255,255,.16);
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      background: rgba(255, 255, 255, 0.07);
-      color: #f4f6fa;
-      font-size: 0.76rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 1.25rem;
-    }
-
-    /* Navigation */
-    #mainNav {
-      padding-top: 0.85rem;
-      padding-bottom: 0.85rem;
-      background: rgba(11, 18, 32, 0.88);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    #mainNav .navbar-brand {
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      font-size: 1rem;
-    }
-
-    #mainNav .navbar-nav .nav-item .nav-link {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.07em;
-      color: rgba(255, 255, 255, 0.78);
-    }
-
-    #mainNav .navbar-nav .nav-item .nav-link:hover,
-    #mainNav .navbar-nav .nav-item .nav-link.active {
-      color: #fff;
-    }
-
-    #mainNav .navbar-toggler {
-      padding: 0.62rem 0.78rem;
-      border: 0;
-      border-radius: 10px;
-      background: #b85a0a;
-      color: #fff;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.88);
+      font-size: .72rem;
+      font-weight: 650;
+      letter-spacing: .08em;
       text-transform: uppercase;
     }
 
-    #mainNav .navbar-toggler:focus {
-      outline: 3px solid #ffb45f;
-      outline-offset: 2px;
-    }
-
-    /* Hero */
-    header.masthead {
-      position: relative;
-      overflow: hidden;
-      min-height: 700px;
-      padding: 150px 0 105px;
-      display: flex;
-      align-items: center;
-      background:
-        radial-gradient(circle at 80% 20%, rgba(240, 138, 36, 0.19), transparent 28%),
-        radial-gradient(circle at 20% 80%, rgba(55, 112, 220, 0.18), transparent 26%),
-        linear-gradient(135deg, #09111f 0%, #101c32 54%, #17253e 100%) !important;
-      color: #fff;
-    }
-
-    header.masthead::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      opacity: 0.32;
-      background-image:
-        radial-gradient(circle at 12% 25%, rgba(255,255,255,0.35) 0 1px, transparent 1.8px),
-        radial-gradient(circle at 29% 66%, rgba(255,255,255,0.28) 0 1px, transparent 1.8px),
-        radial-gradient(circle at 73% 35%, rgba(255,255,255,0.26) 0 1px, transparent 1.8px),
-        radial-gradient(circle at 88% 75%, rgba(255,255,255,0.20) 0 1px, transparent 1.8px);
-      background-size: 180px 180px, 230px 230px, 210px 210px, 270px 270px;
-      pointer-events: none;
-    }
-
-    header.masthead .container {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      max-width: 100%;
-      padding-left: clamp(1.25rem, 3.5vw, 4.5rem);
-      padding-right: clamp(1.25rem, 3.5vw, 4.5rem);
-    }
-
-    .hero-grid {
-      display: block;
-    }
-
-    .hero-copy {
-      width: 100%;
-      max-width: none;
-      text-align: center;
-    }
-
-    .hero-name {
-      font-size: clamp(4rem, 7.6vw, 7rem);
-      line-height: 0.94;
+    .hero h1 {
+      margin: 0 0 1.5rem;
+      max-width: 760px;
+      font-size: clamp(3.5rem, 7vw, 6.5rem);
+      line-height: .94;
+      letter-spacing: -.065em;
       font-weight: 800;
-      letter-spacing: -0.06em;
-      margin-bottom: 1.6rem;
-      color: #fff;
-      white-space: nowrap;
     }
 
-    .hero-statement {
-      max-width: 980px;
+    .hero-intro {
+      max-width: 720px;
+      margin: 0 0 1.9rem;
+      color: rgba(255,255,255,.88);
       font-family: "Source Serif 4", serif;
-      font-size: clamp(1.28rem, 1.8vw, 1.65rem);
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.9);
-      margin: 0 auto 2rem;
+      font-size: clamp(1.22rem, 2vw, 1.55rem);
+      line-height: 1.55;
     }
 
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem 1.25rem;
-      color: rgba(255,255,255,0.66);
-      font-size: 0.86rem;
+      gap: .75rem 1.25rem;
       margin-bottom: 2rem;
-      justify-content: center;
+      color: rgba(255,255,255,.62);
+      font-size: .84rem;
     }
 
-    .hero-meta span i {
-      color: var(--accent);
-      margin-right: 0.4rem;
-    }
+    .hero-meta i { color: var(--accent); margin-right: .4rem; }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: .75rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
       justify-content: center;
-    }
-
-    .hero-actions .btn {
+      gap: .5rem;
+      min-height: 46px;
+      padding: .75rem 1.15rem;
+      border: 1px solid transparent;
       border-radius: 999px;
-      padding: 0.85rem 1.35rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.05em;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-decoration: none;
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
     }
 
-    .hero-copy::after {
+    .button:hover { transform: translateY(-2px); }
+
+    .button-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .button-primary:hover { background: #c86510; }
+
+    .button-ghost {
+      border-color: rgba(255,255,255,.22);
+      background: rgba(255,255,255,.05);
+      color: #fff;
+    }
+
+    .button-ghost:hover {
+      border-color: rgba(255,255,255,.42);
+      background: rgba(255,255,255,.1);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 420px;
+      display: grid;
+      place-items: center;
+    }
+
+    .graph-shell {
+      position: relative;
+      width: min(100%, 440px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 32px;
+      background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.015));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.05), 0 30px 80px rgba(0,0,0,.18);
+    }
+
+    .graph-shell::before,
+    .graph-shell::after {
       content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(4px);
+    }
+
+    .graph-shell::before {
+      width: 150px;
+      height: 150px;
+      top: -24px;
+      right: -20px;
+      background: rgba(233,122,24,.13);
+    }
+
+    .graph-shell::after {
+      width: 180px;
+      height: 180px;
+      left: -50px;
+      bottom: -55px;
+      background: rgba(50,95,170,.12);
+    }
+
+    .network-svg {
+      position: absolute;
+      inset: 7%;
+      width: 86%;
+      height: 86%;
+    }
+
+    .graph-caption {
+      position: absolute;
+      left: 1.2rem;
+      right: 1.2rem;
+      bottom: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .9rem 1rem;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px;
+      background: rgba(7,13,24,.72);
+      color: rgba(255,255,255,.66);
+      font-size: .72rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .graph-caption strong {
       display: block;
-      width: 78px;
-      height: 3px;
-      margin: 2.5rem auto 0;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent), rgba(240, 138, 36, 0));
-    }
-
-    .btn-primary {
-      background: #b85a0a;
-      border-color: #b85a0a;
       color: #fff;
+      font-size: .8rem;
+      margin-bottom: .1rem;
     }
 
-    .btn-primary:hover,
-    .btn-primary:focus {
-      background: #8f4305;
-      border-color: #8f4305;
-      color: #fff;
+    /* ---------------- Shared section styles ---------------- */
+    .section {
+      padding: 104px 0;
     }
 
-    .btn-ghost {
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.26);
-      background: rgba(255,255,255,0.05);
+    .section-soft { background: var(--soft); }
+    .section-warm { background: var(--warm); }
+    .section-dark { background: var(--navy); color: #fff; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+      gap: 3rem;
+      align-items: end;
+      margin-bottom: 3.5rem;
     }
 
-    .btn-ghost:hover {
-      color: #fff;
-      border-color: rgba(255,255,255,0.5);
-      background: rgba(255,255,255,0.1);
+    .section-kicker {
+      display: block;
+      margin-bottom: .7rem;
+      color: var(--accent-dark);
+      font-size: .72rem;
+      font-weight: 750;
+      letter-spacing: .09em;
+      text-transform: uppercase;
     }
 
+    .section-title {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.15rem);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+      font-weight: 780;
+    }
 
-    /* About */
+    .section-lead {
+      max-width: 670px;
+      margin: 0;
+      color: var(--muted);
+      font-family: "Source Serif 4", serif;
+      font-size: 1.12rem;
+      line-height: 1.72;
+    }
+
+    .section-dark .section-lead { color: rgba(255,255,255,.62); }
+    .section-dark .section-kicker { color: #ffad60; }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      color: var(--accent-dark);
+      font-size: .82rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .text-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ---------------- About ---------------- */
     .about-grid {
       display: grid;
-      grid-template-columns: 1.35fr 0.85fr;
-      gap: 3.5rem;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      gap: clamp(3rem, 7vw, 6rem);
       align-items: start;
     }
 
     .about-copy p {
+      margin: 0 0 1.35rem;
       font-family: "Source Serif 4", serif;
-      font-size: 1.14rem;
-      line-height: 1.8;
+      font-size: 1.13rem;
+      line-height: 1.82;
+      color: #4c586b;
     }
 
-    .about-panel {
-      border-left: 1px solid var(--line);
-      padding-left: 2rem;
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin-top: 1.9rem;
     }
 
-    .about-item {
-      padding: 0 0 1.2rem;
-      margin-bottom: 1.2rem;
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: .48rem .72rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--soft);
+      color: #596476;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+
+    .profile-list {
+      margin: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .profile-item {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 1rem;
+      padding: 1.15rem 0;
       border-bottom: 1px solid var(--line);
     }
 
-    .about-item:last-child {
-      border-bottom: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .about-item span {
-      display: block;
-      color: #81899a;
-      font-size: 0.72rem;
+    .profile-item dt {
+      color: #8a93a1;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.25rem;
     }
 
-    .about-item strong {
-      font-size: 0.94rem;
-      font-weight: 650;
+    .profile-item dd {
+      margin: 0;
+      font-size: .9rem;
+      font-weight: 620;
+      line-height: 1.55;
     }
 
-    .profile-pill {
-      display: inline-block;
-      margin: 0.3rem 0.3rem 0 0;
-      padding: 0.52rem 0.8rem;
-      border-radius: 999px;
-      background: var(--paper-alt);
+    /* ---------------- Research ---------------- */
+    .research-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+      gap: 2rem;
+      align-items: stretch;
+    }
+
+    .research-core {
+      padding: clamp(1.7rem, 4vw, 2.7rem);
       border: 1px solid var(--line);
-      color: #556071;
-      font-size: 0.78rem;
-      font-weight: 500;
-    }
-
-    /* Research */
-    #research {
-      background: var(--paper-alt);
-    }
-
-    .research-focus {
-      position: relative;
-      overflow: hidden;
+      border-radius: 26px;
       background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 24px;
       box-shadow: var(--shadow);
-      padding: 2.4rem;
     }
 
-    .research-focus::after {
-      content: "";
-      position: absolute;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
-      right: -95px;
-      top: -95px;
-      background: var(--accent-soft);
-    }
-
-    .research-intro {
-      max-width: 790px;
-      margin: 0 auto 2.2rem;
+    .research-core > p {
+      max-width: 760px;
+      margin: 0 0 2rem;
+      color: #4d596b;
       font-family: "Source Serif 4", serif;
-      font-size: 1.12rem;
-      line-height: 1.75;
-      text-align: center;
-      position: relative;
-      z-index: 2;
+      font-size: 1.08rem;
+      line-height: 1.76;
     }
 
-    .research-pipeline {
+    .workflow {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 0.85rem;
-      position: relative;
-      z-index: 2;
+      gap: .65rem;
     }
 
-    .pipeline-step {
+    .workflow-step {
       position: relative;
-      padding: 1.25rem 1rem 1.15rem;
-      min-height: 168px;
+      min-height: 160px;
+      padding: 1.05rem;
+      border: 1px solid #e9ebef;
       border-radius: 16px;
-      background: #fbfcfd;
-      border: 1px solid #e8ebef;
+      background: #fafbfc;
     }
 
-    .pipeline-step:not(:last-child)::after {
+    .workflow-step:not(:last-child)::after {
       content: "→";
       position: absolute;
-      right: -0.72rem;
       top: 50%;
+      right: -.55rem;
+      z-index: 2;
       transform: translateY(-50%);
-      color: #a6aeba;
-      z-index: 3;
-      font-size: 1.05rem;
+      color: #a5acb7;
       font-weight: 700;
     }
 
-    .pipeline-number {
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+    .workflow-step span {
+      display: block;
+      margin-bottom: .6rem;
       color: var(--accent);
-      margin-bottom: 0.7rem;
+      font-size: .67rem;
+      font-weight: 750;
+      letter-spacing: .08em;
     }
 
-    .pipeline-step i {
-      font-size: 1.35rem;
-      color: #304d7a;
-      margin-bottom: 0.75rem;
+    .workflow-step i {
+      margin-bottom: .7rem;
+      color: var(--blue);
+      font-size: 1.15rem;
     }
 
-    .pipeline-step h4 {
-      font-size: 0.9rem;
+    .workflow-step h3 {
+      margin: 0 0 .4rem;
+      font-size: .86rem;
       line-height: 1.35;
-      margin-bottom: 0.45rem;
-      font-weight: 700;
     }
 
-    .pipeline-step p {
+    .workflow-step p {
       margin: 0;
-      font-size: 0.73rem;
-      line-height: 1.5;
+      color: var(--muted);
+      font-size: .7rem;
+      line-height: 1.48;
     }
 
     .inductive-note {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
-      border-radius: 12px;
+      margin-top: .9rem;
+      padding: .86rem 1rem;
+      border-radius: 13px;
       background: var(--blue-soft);
-      color: #3d587e;
-      font-size: 0.78rem;
-      text-align: center;
-      position: relative;
-      z-index: 2;
+      color: #405b82;
+      font-size: .76rem;
     }
 
-    .question-card {
-      height: 100%;
-      background: #fff;
-      border-radius: 18px;
+    .questions {
+      display: grid;
+      gap: .9rem;
+    }
+
+    .question {
+      padding: 1.35rem 1.4rem;
       border: 1px solid var(--line);
-      padding: 1.55rem;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border-radius: 18px;
+      background: rgba(255,255,255,.72);
     }
 
-    .question-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 35px rgba(12, 25, 48, 0.08);
-    }
-
-    .question-index {
-      font-size: 0.72rem;
+    .question small {
+      display: block;
+      margin-bottom: .45rem;
+      color: var(--accent-dark);
+      font-size: .66rem;
       font-weight: 750;
-      letter-spacing: 0.1em;
-      color: var(--accent);
-      margin-bottom: 0.85rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
-    .question-card h4 {
-      font-size: 1rem;
+    .question h3 {
+      margin: 0 0 .45rem;
+      font-size: .98rem;
       line-height: 1.45;
-      margin-bottom: 0.65rem;
     }
 
-    /* Timeline */
+    .question p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .8rem;
+      line-height: 1.6;
+    }
+
+    /* ---------------- Projects ---------------- */
+    .projects-intro {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2.6rem;
+    }
+
+    .projects-intro p {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-family: "Source Serif 4", serif;
+      font-size: 1.08rem;
+    }
+
+    .project-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .project-row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1.2fr) minmax(220px, .8fr) 38px;
+      gap: 1.4rem;
+      align-items: center;
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      transition: padding .18s ease, background .18s ease;
+    }
+
+    .project-row:hover {
+      margin-inline: -.9rem;
+      padding-inline: .9rem;
+      border-radius: 16px;
+      background: #fafbfc;
+    }
+
+    .project-label {
+      color: var(--accent-dark);
+      font-size: .68rem;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .project-main h3 {
+      margin: 0 0 .35rem;
+      font-size: 1.08rem;
+      letter-spacing: -.015em;
+    }
+
+    .project-main p,
+    .project-meta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.58;
+    }
+
+    .project-meta strong {
+      display: block;
+      margin-bottom: .28rem;
+      color: #495466;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .project-arrow {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--blue);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .project-row:hover .project-arrow {
+      transform: translate(2px, -2px);
+      border-color: #cdd3dc;
+    }
+
+    /* ---------------- Timeline ---------------- */
     .timeline {
       position: relative;
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
       padding-left: 2rem;
     }
 
-    .timeline:before {
+    .timeline::before {
       content: "";
       position: absolute;
-      left: 0.48rem;
-      top: 0.25rem;
+      left: .46rem;
+      top: .25rem;
       bottom: 0;
       width: 1px;
       background: #dfe3e8;
@@ -572,101 +738,98 @@
 
     .timeline-item {
       position: relative;
-      padding: 0 0 2.25rem 1.65rem;
+      padding: 0 0 2.5rem 1.75rem;
     }
 
-    .timeline-item:before {
+    .timeline-item:last-child { padding-bottom: 0; }
+
+    .timeline-item::before {
       content: "";
       position: absolute;
-      left: -1.82rem;
-      top: 0.36rem;
+      left: -1.86rem;
+      top: .38rem;
       width: 12px;
       height: 12px;
+      border: 3px solid var(--accent);
       border-radius: 50%;
       background: #fff;
-      border: 3px solid var(--accent);
       box-shadow: 0 0 0 4px #fff;
     }
 
     .timeline-date {
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      margin-bottom: .25rem;
       color: #8a93a1;
-      margin-bottom: 0.28rem;
-      font-weight: 600;
-    }
-
-    .timeline-item h4 {
-      margin-bottom: 0.16rem;
-      font-size: 1.06rem;
+      font-size: .69rem;
       font-weight: 700;
-      color: var(--ink) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
-    .timeline-item h5 {
-      font-size: 0.92rem;
-      font-weight: 500;
+    .timeline h3 {
+      margin: 0 0 .16rem;
+      font-size: 1.05rem;
+      letter-spacing: -.01em;
+    }
+
+    .timeline h4 {
+      margin: 0 0 .55rem;
       color: #607086;
-      margin-bottom: 0.52rem;
+      font-size: .9rem;
+      font-weight: 520;
+    }
+
+    .timeline p {
+      margin: .25rem 0 0;
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.65;
     }
 
     .academic-link {
       color: inherit;
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: color 0.18s ease, border-color 0.18s ease;
+      transition: color .16s ease, border-color .16s ease;
     }
 
-    .academic-link:hover,
-    .academic-link:focus {
-      color: #a44d05;
-      text-decoration: none;
-      border-bottom-color: rgba(164, 77, 5, 0.45);
+    .academic-link:hover {
+      color: var(--accent-dark);
+      border-bottom-color: rgba(184,86,8,.35);
     }
 
-    .academic-link .fa-external-link-alt {
-      font-size: 0.68em;
-      margin-left: 0.28rem;
-      opacity: 0.7;
-      vertical-align: 0.06em;
-    }
-
-    /* Publications */
-    #publications {
-      background: var(--paper-warm);
+    /* ---------------- Publications ---------------- */
+    .pub-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
     }
 
     .pub-card {
-      height: 100%;
-      background: #fff;
-      border-radius: 18px;
-      border: 1px solid #ece9e2;
+      display: flex;
+      flex-direction: column;
+      min-height: 230px;
       padding: 1.55rem;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border: 1px solid #ebe8e1;
+      border-radius: 18px;
+      background: #fff;
+      transition: transform .18s ease, box-shadow .18s ease;
     }
 
     .pub-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 14px 35px rgba(53, 45, 30, 0.08);
-    }
-
-    .pub-card h4 {
-      line-height: 1.45;
-      font-size: 1rem;
-      margin-bottom: 0.75rem;
+      box-shadow: 0 14px 35px rgba(53,45,30,.08);
     }
 
     .pub-meta {
       display: flex;
       align-items: center;
-      gap: 0.45rem;
-      margin-bottom: 0.85rem;
-      font-size: 0.72rem;
-      color: #747d89;
-      font-weight: 600;
+      gap: .45rem;
+      margin-bottom: .85rem;
+      color: #7a828e;
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .06em;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
     }
 
     .pub-dot {
@@ -676,731 +839,950 @@
       background: var(--accent);
     }
 
-    .doi-link {
-      display: inline-flex;
+    .pub-card h3 {
+      margin: 0 0 .7rem;
+      font-size: .98rem;
+      line-height: 1.48;
+    }
+
+    .pub-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .8rem;
+      line-height: 1.62;
+    }
+
+    .pub-card .text-link {
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .pub-profile {
       align-items: center;
-      gap: 0.35rem;
-      margin-top: 0.6rem;
-      font-size: 0.78rem;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(145deg, #fff, #faf8f4);
+    }
+
+    .pub-profile i {
+      margin-bottom: .9rem;
+      color: var(--blue);
+      font-size: 1.7rem;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .45rem 1rem;
+      margin-top: 1rem;
+      font-size: .78rem;
       font-weight: 650;
     }
 
-    /* Expertise */
-    .mini-section {
-      padding-top: 64px;
-      padding-bottom: 64px;
+    .profile-links a { color: var(--accent-dark); text-decoration: none; }
+    .profile-links a:hover { text-decoration: underline; }
+
+    /* ---------------- Methods ---------------- */
+    .methods-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
 
-    .expertise-card {
-      height: 100%;
+    .method {
       padding: 1.4rem;
-      border-radius: 16px;
       border: 1px solid var(--line);
+      border-radius: 18px;
       background: #fff;
     }
 
-    .expertise-card i {
-      font-size: 1.25rem;
-      color: #304d7a;
-      margin-bottom: 0.8rem;
+    .method i {
+      margin-bottom: .8rem;
+      color: var(--blue);
+      font-size: 1.15rem;
     }
 
-    .expertise-card h4 {
-      font-size: 0.95rem;
+    .method h3 {
+      margin: 0 0 .4rem;
+      font-size: .92rem;
+    }
+
+    .method p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .78rem;
+      line-height: 1.6;
+    }
+
+    /* ---------------- Beyond research ---------------- */
+    .beyond-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .beyond-card {
+      padding: 1.4rem;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.78);
+    }
+
+    .beyond-card h3 {
+      margin: 0 0 .55rem;
+      font-size: .9rem;
+    }
+
+    .beyond-card h3 i { color: var(--blue); margin-right: .45rem; }
+
+    .beyond-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .8rem;
+      line-height: 1.65;
+    }
+
+    /* ---------------- Contact ---------------- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      letter-spacing: -.05em;
+      line-height: 1.08;
+    }
+
+    .contact-copy p {
+      max-width: 610px;
+      margin: 0;
+      color: rgba(255,255,255,.62);
+      font-family: "Source Serif 4", serif;
+      font-size: 1.08rem;
+    }
+
+    .contact-panel {
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    .contact-item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      font-size: .82rem;
+    }
+
+    .contact-item span {
+      color: rgba(255,255,255,.42);
+      font-size: .68rem;
       font-weight: 700;
-      margin-bottom: 0.45rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
-    .community-strip {
-      padding-top: 70px;
-      padding-bottom: 70px;
-      background: #f3f6fa;
-      border-top: 1px solid #e8ebef;
-      border-bottom: 1px solid #e8ebef;
-    }
-
-    .community-strip .section-subheading {
-      margin-bottom: 2.35rem !important;
-    }
-
-    .info-card {
-      height: 100%;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 1.5rem 1.35rem;
-      border-radius: 16px;
-      border: 1px solid #e1e6ed;
-      background: rgba(255,255,255,0.72);
-    }
-
-    .info-card h4 {
-      font-size: 0.92rem;
-      margin-bottom: 0.65rem;
-      color: var(--ink);
-    }
-
-    .info-card h4 i {
-      color: #304d7a;
-    }
-
-    .info-card p {
-      line-height: 1.7;
-    }
-
-    /* Contact */
-    #contact {
-      background: var(--navy);
-      color: #fff;
-    }
-
-    #contact .section-heading,
-    #contact .service-heading {
-      color: #fff !important;
-    }
-
-    #contact .section-subheading,
-    #contact p {
-      color: rgba(255,255,255,0.62) !important;
-    }
-
-    #contact a {
+    .contact-item a {
       color: #ffad60;
-    }
-
-    .contact-card {
-      height: 100%;
-      padding: 1.35rem;
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 16px;
-      background: rgba(255,255,255,0.04);
-    }
-
-    footer.footer {
-      background: #070d18;
-      color: rgba(255,255,255,0.62);
-      padding: 1.4rem 0;
-    }
-
-    footer.footer a {
-      color: rgba(255,255,255,0.76);
-    }
-
-    footer.footer a:hover {
-      color: #fff;
-    }
-
-    footer.footer .social-buttons li a {
-      display: inline-flex;
-      width: 38px;
-      height: 38px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
       text-decoration: none;
-      transition: background 0.15s ease, transform 0.15s ease;
     }
 
-    footer.footer .social-buttons li a:hover,
-    footer.footer .social-buttons li a:focus {
-      background: rgba(255,255,255,0.18);
+    .contact-item a:hover { text-decoration: underline; }
+
+    /* ---------------- Footer ---------------- */
+    .site-footer {
+      padding: 1.35rem 0;
+      background: #060b14;
+      color: rgba(255,255,255,.5);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .footer-copy { font-size: .76rem; }
+
+    .footer-social {
+      display: flex;
+      gap: .45rem;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.78);
+      text-decoration: none;
+      transition: background .16s ease, transform .16s ease;
+    }
+
+    .footer-social a:hover {
+      background: rgba(255,255,255,.14);
       transform: translateY(-1px);
     }
 
-    footer.footer .copyright {
-      font-size: 0.82rem;
+    .footer-profiles {
+      text-align: right;
+      font-size: .76rem;
     }
 
-    @media (max-width: 991px) {
-      header.masthead {
-        padding-top: 135px;
-        min-height: auto;
-      }
+    .footer-profiles a {
+      color: rgba(255,255,255,.68);
+      text-decoration: none;
+    }
 
-      .hero-name {
-        white-space: normal;
-        font-size: clamp(3.4rem, 10vw, 5.5rem);
-      }
+    .footer-profiles a:hover { color: #fff; }
 
-      .about-grid {
+    .separator { margin: 0 .35rem; opacity: .45; }
+
+    /* ---------------- Responsive ---------------- */
+    @media (max-width: 980px) {
+      .hero { min-height: auto; }
+
+      .hero-grid,
+      .about-grid,
+      .research-layout,
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
-      .about-panel {
-        border-left: 0;
-        border-top: 1px solid var(--line);
-        padding-left: 0;
-        padding-top: 1.5rem;
+      .hero-visual {
+        min-height: 350px;
+        max-width: 520px;
       }
 
-      .research-pipeline {
-        grid-template-columns: 1fr 1fr;
+      .section-head {
+        grid-template-columns: 1fr;
+        gap: 1rem;
       }
 
-      .pipeline-step:not(:last-child)::after {
+      .workflow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .workflow-step:not(:last-child)::after { display: none; }
+
+      .project-row {
+        grid-template-columns: 110px minmax(0, 1fr) 34px;
+      }
+
+      .project-meta { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .container { width: min(calc(100% - 2rem), var(--max)); }
+
+      .menu-button { display: inline-flex; }
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        left: 1rem;
+        right: 1rem;
         display: none;
-      }
-    }
-
-    @media (max-width: 575px) {
-      .page-section {
-        padding: 76px 0;
-      }
-
-      .hero-name {
-        font-size: 3.15rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: .55rem;
+        border: 1px solid rgba(255,255,255,.09);
+        border-radius: 14px;
+        background: #0d1729;
+        box-shadow: 0 18px 40px rgba(0,0,0,.22);
       }
 
-      .hero-statement {
-        font-size: 1.18rem;
-      }
+      .nav-links.open { display: flex; }
 
-      .hero-meta {
+      .nav-links li { width: 100%; }
+
+      .nav-links a {
         display: block;
+        padding: .8rem .75rem;
+        border-radius: 10px;
       }
 
-      .hero-meta span {
-        display: block;
-        margin-bottom: 0.45rem;
+      .nav-links a::after { display: none; }
+      .nav-links a:hover { background: rgba(255,255,255,.05); }
+
+      .hero {
+        padding-top: 122px;
+        padding-bottom: 78px;
       }
 
-      .research-focus {
-        padding: 1.3rem;
-      }
+      .hero h1 { font-size: clamp(3rem, 15vw, 4.7rem); }
+      .hero-visual { min-height: 300px; }
 
-      .research-pipeline {
+      .section { padding: 82px 0; }
+
+      .workflow,
+      .pub-grid,
+      .methods-grid,
+      .beyond-grid {
         grid-template-columns: 1fr;
       }
 
-      .section-heading {
-        font-size: 1.7rem !important;
+      .project-row {
+        grid-template-columns: 1fr 36px;
+        gap: .7rem 1rem;
       }
+
+      .project-label {
+        grid-column: 1 / -1;
+      }
+
+      .projects-intro {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .footer-profiles { text-align: center; }
+    }
+
+    @media (max-width: 520px) {
+      .hero-meta { display: block; }
+      .hero-meta span { display: block; margin-bottom: .45rem; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .graph-caption { font-size: .66rem; }
+      .graph-caption > div:last-child { display: none; }
+      .profile-item, .contact-item { grid-template-columns: 1fr; gap: .25rem; }
+      .timeline { padding-left: 1.4rem; }
+      .timeline-item { padding-left: 1.3rem; }
+      .timeline-item::before { left: -1.47rem; }
+      .timeline::before { left: .25rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .button:hover,
+      .pub-card:hover,
+      .project-row:hover .project-arrow,
+      .footer-social a:hover { transform: none; }
     }
   </style>
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bruna Campos Guedes",
-  "url": "https://brunacg.github.io/",
-  "email": "mailto:brunacampos.g@usp.br",
-  "jobTitle": "PhD Candidate in Computer Science (Artificial Intelligence)",
-  "identifier": "https://orcid.org/0000-0002-4384-0056",
-  "worksFor": {
-    "@type": "CollegeOrUniversity",
-    "name": "University of São Paulo",
-    "department": "Institute of Mathematics and Computer Sciences (ICMC)",
-    "url": "https://www.icmc.usp.br"
-  },
-  "alumniOf": [
-    {
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bruna Campos Guedes",
+    "url": "https://brunacg.github.io/",
+    "email": "mailto:brunacampos.g@usp.br",
+    "jobTitle": "PhD Candidate in Computer Science (Artificial Intelligence)",
+    "identifier": "https://orcid.org/0000-0002-4384-0056",
+    "worksFor": {
       "@type": "CollegeOrUniversity",
-      "name": "Federal University of Uberlândia",
-      "url": "https://www.ufu.br/"
+      "name": "University of São Paulo",
+      "department": "Institute of Mathematics and Computer Sciences (ICMC)",
+      "url": "https://www.icmc.usp.br"
     },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Aix-Marseille Université",
-      "url": "https://www.univ-amu.fr/"
-    }
-  ],
-  "sameAs": [
-    "https://orcid.org/0000-0002-4384-0056",
-    "https://github.com/brunacg",
-    "https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en",
-    "https://www.linkedin.com/in/brunacamposguedes/",
-    "http://lattes.cnpq.br/5098861497873665"
-  ],
-  "knowsAbout": [
-    "Machine Learning",
-    "Graph Neural Networks",
-    "Relational Learning",
-    "Artificial Intelligence for Healthcare",
-    "Population Similarity Graphs",
-    "Computational Neuroscience"
-  ]
-}
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Federal University of Uberlândia",
+        "url": "https://www.ufu.br/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Aix-Marseille Université",
+        "url": "https://www.univ-amu.fr/"
+      }
+    ],
+    "sameAs": [
+      "https://orcid.org/0000-0002-4384-0056",
+      "https://github.com/brunacg",
+      "https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en",
+      "https://www.linkedin.com/in/brunacamposguedes/",
+      "http://lattes.cnpq.br/5098861497873665"
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Graph Neural Networks",
+      "Relational Learning",
+      "Artificial Intelligence for Healthcare",
+      "Population Similarity Graphs",
+      "Computational Neuroscience"
+    ]
+  }
   </script>
 </head>
 
 <body id="page-top">
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" aria-label="Primary navigation">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">Bruna C. Guedes</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#page-top">Bruna C. Guedes</a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks">
         Menu <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
   <main id="main-content">
-  <header class="masthead">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-copy">
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
           <div class="eyebrow"><i class="fas fa-flask" aria-hidden="true"></i> PhD Candidate · ICMC-USP</div>
-          <h1 class="hero-name">Bruna Campos Guedes</h1>
-          <p class="hero-statement">
+          <h1>Bruna Campos Guedes</h1>
+          <p class="hero-intro">
             I study when relational information between individuals can improve machine learning on small,
             heterogeneous healthcare datasets — and how to evaluate those models reliably.
           </p>
+
           <div class="hero-meta">
             <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>São Carlos, Brazil</span>
-            <span><i class="fas fa-network-wired" aria-hidden="true"></i>Relational ML & Graph Neural Networks</span>
+            <span><i class="fas fa-network-wired" aria-hidden="true"></i>Relational ML &amp; Graph Neural Networks</span>
             <span><i class="fas fa-heartbeat" aria-hidden="true"></i>AI for Healthcare</span>
           </div>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#research">Explore Research</a>
-            <a class="btn btn-ghost" href="https://drive.google.com/file/d/1fVLgzw0kVzcNrow3oSQdUiePDtPNPHI4/view?usp=sharing"
-              target="_blank" rel="noopener noreferrer" aria-label="Open curriculum vitae in a new tab">CV</a>
-            <a class="btn btn-ghost" href="https://orcid.org/0000-0002-4384-0056" target="_blank"
-              rel="noopener noreferrer" aria-label="Open ORCID profile in a new tab">ORCID</a>
+            <a class="button button-primary" href="#research">Explore research</a>
+            <a class="button button-ghost" href="#projects">View projects</a>
+            <a class="button button-ghost" href="https://drive.google.com/file/d/1fVLgzw0kVzcNrow3oSQdUiePDtPNPHI4/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="graph-shell">
+            <svg class="network-svg" viewBox="0 0 420 420" role="presentation">
+              <g stroke="rgba(255,255,255,.16)" stroke-width="1.4">
+                <line x1="82" y1="88" x2="164" y2="118" />
+                <line x1="82" y1="88" x2="112" y2="188" />
+                <line x1="164" y1="118" x2="226" y2="78" />
+                <line x1="164" y1="118" x2="214" y2="198" />
+                <line x1="226" y1="78" x2="318" y2="126" />
+                <line x1="318" y1="126" x2="300" y2="214" />
+                <line x1="112" y1="188" x2="214" y2="198" />
+                <line x1="112" y1="188" x2="92" y2="286" />
+                <line x1="214" y1="198" x2="300" y2="214" />
+                <line x1="214" y1="198" x2="186" y2="304" />
+                <line x1="300" y1="214" x2="328" y2="316" />
+                <line x1="92" y1="286" x2="186" y2="304" />
+                <line x1="186" y1="304" x2="328" y2="316" />
+                <line x1="164" y1="118" x2="300" y2="214" />
+                <line x1="112" y1="188" x2="186" y2="304" />
+              </g>
+              <g fill="#e97a18">
+                <circle cx="82" cy="88" r="8" />
+                <circle cx="214" cy="198" r="10" />
+                <circle cx="328" cy="316" r="8" />
+              </g>
+              <g fill="#7ea1d6">
+                <circle cx="164" cy="118" r="7" />
+                <circle cx="226" cy="78" r="7" />
+                <circle cx="318" cy="126" r="7" />
+                <circle cx="112" cy="188" r="7" />
+                <circle cx="300" cy="214" r="7" />
+                <circle cx="92" cy="286" r="7" />
+                <circle cx="186" cy="304" r="7" />
+              </g>
+              <g fill="none" stroke="rgba(233,122,24,.45)" stroke-width="1.2">
+                <circle cx="214" cy="198" r="28" />
+                <circle cx="214" cy="198" r="53" opacity=".45" />
+              </g>
+            </svg>
+            <div class="graph-caption">
+              <div>
+                <strong>Population similarity</strong>
+                Individual features + relational structure
+              </div>
+              <div>
+                <strong>Current focus</strong>
+                Reliable inductive graph learning
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">About</h2>
-          <p class="section-subheading">Machine learning across biomedical engineering, neuroscience, and real-world systems.</p>
-        </div>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-copy">
-          <p>
-            I am a PhD candidate at the Institute of Mathematics and Computer Sciences, University of São Paulo
-            (ICMC-USP). My current research focuses on relational machine learning and graph neural networks for
-            heterogeneous Alzheimer-related data, with particular interest in population similarity graphs and
-            inductive inference for unseen individuals.
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">About</span>
+            <h2 class="section-title">Machine learning across biomedical engineering, neuroscience, and real-world systems.</h2>
+          </div>
+          <p class="section-lead">
+            My work sits at the intersection of graph-based learning, small-data methodology, and healthcare applications.
           </p>
-          <p>
-            My background combines Biomedical Engineering, computational neuroscience, and industry machine learning.
-            I conducted fMRI research at the University of Bristol and later worked as a Junior Data Scientist at
-            unico IDTech, where I developed and evaluated machine-learning systems under class imbalance, data scarcity,
-            and production constraints.
-          </p>
-          <div class="mt-4">
-            <span class="profile-pill">Graph Neural Networks</span>
-            <span class="profile-pill">Relational Learning</span>
-            <span class="profile-pill">AI for Healthcare</span>
-            <span class="profile-pill">Reliable Small-Data ML</span>
-          </div>
         </div>
 
-        <aside class="about-panel" aria-label="Research profile summary">
-          <div class="about-item">
-            <span>Current</span>
-            <strong>PhD in Computer Science (Artificial Intelligence), ICMC-USP</strong>
-          </div>
-          <div class="about-item">
-            <span>Research</span>
-            <strong>Population similarity graphs, GNNs, inductive inference, rigorous evaluation</strong>
-          </div>
-          <div class="about-item">
-            <span>Background</span>
-            <strong>Biomedical Engineering · Computational Neuroscience · Industry ML</strong>
-          </div>
-          <div class="about-item">
-            <span>Open to</span>
-            <strong>Research collaboration in graph learning and reliable healthcare AI</strong>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="research">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Current Research</h2>
-          <p class="section-subheading">Population similarity graphs for reliable learning from heterogeneous clinical data.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <div class="research-focus">
-            <p class="research-intro">
-              My doctoral work investigates whether relational inductive biases can improve cognitive-status modeling
-              when datasets are small, heterogeneous, and moderately imbalanced. The central idea is to represent
-              participants not only by their individual features, but also by their similarity relationships to other participants.
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I am a PhD candidate at the Institute of Mathematics and Computer Sciences, University of São Paulo
+              (ICMC-USP). My current research focuses on relational machine learning and graph neural networks for
+              heterogeneous Alzheimer-related data, with particular interest in population similarity graphs and
+              inductive inference for unseen individuals.
+            </p>
+            <p>
+              My background combines Biomedical Engineering, computational neuroscience, and industry machine learning.
+              I conducted fMRI research at the University of Bristol and later worked as a Junior Data Scientist at
+              unico IDTech, where I developed and evaluated machine-learning systems under class imbalance, data scarcity,
+              and production constraints.
             </p>
 
-            <div class="research-pipeline" aria-label="Current research workflow">
-              <div class="pipeline-step">
-                <div class="pipeline-number">01</div>
+            <div class="about-tags" aria-label="Research interests">
+              <span class="tag">Graph Neural Networks</span>
+              <span class="tag">Relational Learning</span>
+              <span class="tag">AI for Healthcare</span>
+              <span class="tag">Reliable Small-Data ML</span>
+            </div>
+          </div>
+
+          <dl class="profile-list">
+            <div class="profile-item">
+              <dt>Current</dt>
+              <dd>PhD in Computer Science (Artificial Intelligence), ICMC-USP</dd>
+            </div>
+            <div class="profile-item">
+              <dt>Research</dt>
+              <dd>Population similarity graphs, GNNs, inductive inference, rigorous evaluation</dd>
+            </div>
+            <div class="profile-item">
+              <dt>Background</dt>
+              <dd>Biomedical Engineering · Computational Neuroscience · Industry ML</dd>
+            </div>
+            <div class="profile-item">
+              <dt>Open to</dt>
+              <dd>Research collaboration in graph learning and reliable healthcare AI</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="research">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Current research</span>
+            <h2 class="section-title">Population similarity graphs for heterogeneous clinical data.</h2>
+          </div>
+          <p class="section-lead">
+            My doctoral research asks whether relational inductive biases can help when participant-level datasets are small,
+            heterogeneous, and moderately imbalanced — without sacrificing methodological rigor.
+          </p>
+        </div>
+
+        <div class="research-layout">
+          <div class="research-core">
+            <p>
+              The central idea is to represent participants not only by their own features, but also through their similarity
+              relationships to other participants. This creates a population graph in which graph neural networks can model
+              individual information together with relational structure.
+            </p>
+
+            <div class="workflow" aria-label="Current research workflow">
+              <div class="workflow-step">
+                <span>01</span>
                 <i class="fas fa-table" aria-hidden="true"></i>
-                <h4>Heterogeneous data</h4>
+                <h3>Heterogeneous data</h3>
                 <p>Clinical and sociodemographic participant variables.</p>
               </div>
-              <div class="pipeline-step">
-                <div class="pipeline-number">02</div>
+              <div class="workflow-step">
+                <span>02</span>
                 <i class="fas fa-layer-group" aria-hidden="true"></i>
-                <h4>Representation</h4>
+                <h3>Representation</h3>
                 <p>Participant-level latent representations from heterogeneous inputs.</p>
               </div>
-              <div class="pipeline-step">
-                <div class="pipeline-number">03</div>
+              <div class="workflow-step">
+                <span>03</span>
                 <i class="fas fa-share-alt" aria-hidden="true"></i>
-                <h4>Similarity graph</h4>
+                <h3>Similarity graph</h3>
                 <p>Participants connected according to learned or defined similarity.</p>
               </div>
-              <div class="pipeline-step">
-                <div class="pipeline-number">04</div>
+              <div class="workflow-step">
+                <span>04</span>
                 <i class="fas fa-network-wired" aria-hidden="true"></i>
-                <h4>Graph learning</h4>
+                <h3>Graph learning</h3>
                 <p>Relational information propagated with graph neural networks.</p>
               </div>
-              <div class="pipeline-step">
-                <div class="pipeline-number">05</div>
+              <div class="workflow-step">
+                <span>05</span>
                 <i class="fas fa-chart-line" aria-hidden="true"></i>
-                <h4>Evaluation</h4>
+                <h3>Evaluation</h3>
                 <p>Cognitive-status prediction under leakage-controlled validation.</p>
               </div>
             </div>
 
             <div class="inductive-note">
-              <i class="fas fa-user-plus mr-2" aria-hidden="true"></i>
+              <i class="fas fa-user-plus" aria-hidden="true"></i>
               <strong>Inductive inference:</strong> new participants are connected to the learned population structure and evaluated without rebuilding the full training pipeline.
+            </div>
+          </div>
+
+          <div class="questions" aria-label="Research questions">
+            <article class="question">
+              <small>RQ1 · Relational signal</small>
+              <h3>When does relational information help?</h3>
+              <p>I compare graph-based learning with models that treat participants independently to identify when population structure provides a measurable advantage.</p>
+            </article>
+            <article class="question">
+              <small>RQ2 · Generalization</small>
+              <h3>How should graph models handle new participants?</h3>
+              <p>I investigate inductive inference protocols that connect unseen individuals to a learned population structure without rebuilding the full system.</p>
+            </article>
+            <article class="question">
+              <small>RQ3 · Reliability</small>
+              <h3>How reliable are conclusions from small clinical datasets?</h3>
+              <p>I use leakage-controlled nested validation, robustness analysis, class-specific evaluation, and ablation studies to separate promising patterns from unstable results.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="projects-intro">
+          <div>
+            <span class="section-kicker">Research code</span>
+            <h2 class="section-title">Selected public projects.</h2>
+          </div>
+          <p>
+            Reproducible implementations and research-oriented code that document how I approach graph learning,
+            scientific reanalysis, and interpretable machine learning.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <a class="project-row" href="https://github.com/brunacg/gnn-from-scratch" target="_blank" rel="noopener noreferrer">
+            <div class="project-label">Graph learning</div>
+            <div class="project-main">
+              <h3>GNN from Scratch</h3>
+              <p>Graph neural network foundations implemented from first principles, with reproducible experiments and tests.</p>
+            </div>
+            <div class="project-meta">
+              <strong>Focus</strong>
+              <p>Autodiff · GCN · GAT · sparse graph operations</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-up" style="transform:rotate(45deg)" aria-hidden="true"></i></div>
+          </a>
+
+          <a class="project-row" href="https://github.com/brunacg/fmri-connectivity-similarity" target="_blank" rel="noopener noreferrer">
+            <div class="project-label">Reproducibility</div>
+            <div class="project-main">
+              <h3>fMRI Connectivity Similarity</h3>
+              <p>Reconstruction and modern reanalysis framework for earlier neuroimaging work on functional connectivity and similarity.</p>
+            </div>
+            <div class="project-meta">
+              <strong>Focus</strong>
+              <p>fMRI · connectivity · scientific reconstruction</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-up" style="transform:rotate(45deg)" aria-hidden="true"></i></div>
+          </a>
+
+          <a class="project-row" href="https://github.com/brunacg/interpretable-ml-methods" target="_blank" rel="noopener noreferrer">
+            <div class="project-label">Explainability</div>
+            <div class="project-main">
+              <h3>Interpretable ML Methods</h3>
+              <p>Reusable implementations of model-agnostic interpretation methods for studying individual prediction behavior.</p>
+            </div>
+            <div class="project-meta">
+              <strong>Focus</strong>
+              <p>Ceteris Paribus · ICE · reusable Python tooling</p>
+            </div>
+            <div class="project-arrow"><i class="fas fa-arrow-up" style="transform:rotate(45deg)" aria-hidden="true"></i></div>
+          </a>
+        </div>
+
+        <div style="margin-top:1.5rem;">
+          <a class="text-link" href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener noreferrer">
+            View all repositories <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Trajectory</span>
+            <h2 class="section-title">Education &amp; experience.</h2>
+          </div>
+          <p class="section-lead">A path from biomedical engineering and computational neuroscience to relational machine learning.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2024 – Present</div>
+            <h3>PhD in Computer Science (Artificial Intelligence)</h3>
+            <h4><a class="academic-link" href="https://www.icmc.usp.br" target="_blank" rel="noopener noreferrer">University of São Paulo · ICMC-USP <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h4>
+            <p><strong>Advisor:</strong> <a class="academic-link" href="https://sites.google.com/usp.br/andreponce" target="_blank" rel="noopener noreferrer">Prof. André Carlos Ponce de Leon Ferreira de Carvalho</a></p>
+            <p>Research on relational integration of heterogeneous Alzheimer-related data using population similarity graphs, graph neural networks, rigorous evaluation, and inductive inference.</p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2021 – 2023</div>
+            <h3>Junior Data Scientist</h3>
+            <h4><a class="academic-link" href="https://www.unico.io/pt" target="_blank" rel="noopener noreferrer">unico IDTech <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h4>
+            <p>Developed and evaluated machine-learning systems for large-scale identity verification, working with class imbalance, data scarcity, latency constraints, and GAN-based synthetic-data generation.</p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">May – August 2019</div>
+            <h3>Research Intern in Computational Neuroscience</h3>
+            <h4><a class="academic-link" href="https://www.bristol.ac.uk/science-engineering/schools/eng-maths-tech/" target="_blank" rel="noopener noreferrer">University of Bristol · School of Engineering Mathematics and Technology <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h4>
+            <p><strong>Supervisor:</strong> <a class="academic-link" href="https://naokimas.github.io/naokimasuda.github.io/index.html" target="_blank" rel="noopener noreferrer">Prof. Naoki Masuda</a></p>
+            <p>Investigated correlation methods in fMRI data from individuals with autism spectrum disorder, focusing on functional relationships and brain-connectivity patterns.</p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2018 – 2019</div>
+            <h3>Academic Exchange in Biomedical Engineering</h3>
+            <h4><a class="academic-link" href="https://polytech.univ-amu.fr/fr/formations/cycle-ingenieur/genie-biomedical" target="_blank" rel="noopener noreferrer">Polytech Marseille · Aix-Marseille Université · France <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h4>
+            <p>International academic mobility during the Biomedical Engineering degree, supported by CAPES/BRAFITEC.</p>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2015 – 2022</div>
+            <h3>BSc in Biomedical Engineering</h3>
+            <h4><a class="academic-link" href="https://www.feelt.ufu.br/graduacao/engenharia-biomedica" target="_blank" rel="noopener noreferrer">Federal University of Uberlândia · Biomedical Engineering <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h4>
+            <p>Undergraduate training in biomedical engineering, signal processing, and neuroimaging, including research on correlation methods applied to functional MRI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-warm" id="publications">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Research outputs</span>
+            <h2 class="section-title">Selected publications.</h2>
+          </div>
+          <p class="section-lead">Early work across biomedical engineering, signal processing, and mathematical modeling.</p>
+        </div>
+
+        <div class="pub-grid">
+          <article class="pub-card">
+            <div class="pub-meta"><span>2019</span><span class="pub-dot"></span><span>Conference paper</span></div>
+            <h3 lang="pt-BR">Desenvolvimento de um sistema de controle para diluição automática de desinfetantes</h3>
+            <p>XII Simpósio de Engenharia Biomédica / IX Simpósio de Instrumentação e Imagens Médicas.</p>
+            <a class="text-link" href="https://doi.org/10.5281/zenodo.3461042" target="_blank" rel="noopener noreferrer">DOI <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
+            <h3 lang="pt-BR">Dispositivo para monitoramento de estresse através de biofeedback</h3>
+            <p>XI Simpósio de Engenharia Biomédica.</p>
+            <a class="text-link" href="https://doi.org/10.29327/xiseb.128408" target="_blank" rel="noopener noreferrer">DOI <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
+            <h3 lang="pt-BR">Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários</h3>
+            <p>XI Simpósio de Engenharia Biomédica.</p>
+            <a class="text-link" href="https://doi.org/10.29327/xiseb.128430" target="_blank" rel="noopener noreferrer">DOI <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
+            <h3 lang="pt-BR">Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos</h3>
+            <p>V Congresso Brasileiro de Eletromiografia e Cinesiologia / X Simpósio de Engenharia Biomédica.</p>
+            <a class="text-link" href="https://doi.org/10.29327/cobecseb.78900" target="_blank" rel="noopener noreferrer">DOI <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="pub-card">
+            <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
+            <h3 lang="pt-BR">O Problema de Geometria de Distâncias Moleculares Discretizável</h3>
+            <p>XVII Semana da Matemática / VII Semana da Estatística, Federal University of Uberlândia.</p>
+          </article>
+
+          <article class="pub-card pub-profile">
+            <i class="fas fa-book-open" aria-hidden="true"></i>
+            <h3>Full research record</h3>
+            <p>Additional conference work and abstracts are available through my research profiles.</p>
+            <div class="profile-links">
+              <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
+              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methods">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Methods &amp; tools</span>
+            <h2 class="section-title">How I work.</h2>
+          </div>
+          <p class="section-lead">A compact overview of the tools and methodological practices that support my research.</p>
+        </div>
+
+        <div class="methods-grid">
+          <article class="method">
+            <i class="fas fa-network-wired" aria-hidden="true"></i>
+            <h3>Machine Learning</h3>
+            <p>PyTorch · PyTorch Geometric · scikit-learn · XGBoost</p>
+          </article>
+          <article class="method">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <h3>Scientific Computing</h3>
+            <p>Python · MATLAB · C++ · NumPy · Pandas · NetworkX</p>
+          </article>
+          <article class="method">
+            <i class="fas fa-vial" aria-hidden="true"></i>
+            <h3>Experimental Practice</h3>
+            <p>Nested cross-validation · robustness analysis · ablations · model explainability</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="community">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Beyond research</span>
+            <h2 class="section-title">Community, recognition, and languages.</h2>
+          </div>
+          <p class="section-lead">Activities and experiences that complement my academic profile.</p>
+        </div>
+
+        <div class="beyond-grid">
+          <article class="beyond-card">
+            <h3><i class="fas fa-users" aria-hidden="true"></i>Community</h3>
+            <p>Volunteer Project Assistant at <strong>Data Girls</strong> (2023–2025), supporting outreach and mentorship initiatives for women in technology.</p>
+          </article>
+          <article class="beyond-card">
+            <h3><i class="fas fa-trophy" aria-hidden="true"></i>Recognition</h3>
+            <p>Winner of the 2017 <strong>Innovations in Electromyography &amp; Kinesiology</strong> competition; OBMEP bronze medalist (2010, 2015) with three honorable mentions.</p>
+          </article>
+          <article class="beyond-card">
+            <h3><i class="fas fa-language" aria-hidden="true"></i>Languages</h3>
+            <p>Portuguese (Native) · English (B2) · French (B1)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-kicker">Contact</span>
+          <h2>Research collaborations and academic inquiries.</h2>
+          <p>
+            I am interested in collaborations around graph learning, reliable machine learning for healthcare,
+            and methodological questions involving small heterogeneous datasets.
+          </p>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-item">
+            <span>Email</span>
+            <div><a href="mailto:brunacampos.g@usp.br">brunacampos.g@usp.br</a></div>
+          </div>
+          <div class="contact-item">
+            <span>Location</span>
+            <div>São Carlos, Brazil</div>
+          </div>
+          <div class="contact-item">
+            <span>Profiles</span>
+            <div>
+              <a href="https://github.com/brunacg" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <span class="separator">·</span>
+              <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
+              <span class="separator">·</span>
+              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+              <span class="separator">·</span>
+              <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-12 text-center mb-4">
-          <h3 class="h4">Research Questions</h3>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="question-card">
-            <div class="question-index">01 · RELATIONAL SIGNAL</div>
-            <h4>When does relational information help?</h4>
-            <p class="text-muted small mb-0">
-              I compare graph-based learning with models that treat participants independently to determine when
-              population structure provides a measurable advantage.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="question-card">
-            <div class="question-index">02 · GENERALIZATION</div>
-            <h4>How should graph models handle new participants?</h4>
-            <p class="text-muted small mb-0">
-              I investigate inductive inference protocols that connect unseen individuals to the learned population
-              structure without rebuilding the full training system.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="question-card">
-            <div class="question-index">03 · RELIABILITY</div>
-            <h4>How reliable are conclusions from small clinical datasets?</h4>
-            <p class="text-muted small mb-0">
-              I use leakage-controlled nested validation, robustness analysis, class-specific evaluation, and ablation
-              studies to separate promising patterns from unstable results.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- A Projects section can be added here once the public GitHub portfolio is ready. -->
-
-  <section class="page-section" id="experience">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Education & Experience</h2>
-          <p class="section-subheading">A path from biomedical engineering to relational machine learning.</p>
-        </div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">2024 – Present</div>
-          <h4>PhD in Computer Science (Artificial Intelligence)</h4>
-          <h5><a class="academic-link" href="https://www.icmc.usp.br" target="_blank" rel="noopener noreferrer">University of São Paulo · ICMC-USP <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
-          <p class="text-muted small mb-1"><strong>Advisor:</strong> <a class="academic-link" href="https://sites.google.com/usp.br/andreponce" target="_blank" rel="noopener noreferrer">Prof. André Carlos Ponce de Leon Ferreira de Carvalho <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-          <p class="text-muted small mb-0">
-            Research on relational integration of heterogeneous Alzheimer-related data using population similarity
-            graphs, graph neural networks, rigorous evaluation, and inductive inference.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">2021 – 2023</div>
-          <h4>Junior Data Scientist</h4>
-          <h5><a class="academic-link" href="https://www.unico.io/pt" target="_blank" rel="noopener noreferrer">unico IDTech <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
-          <p class="text-muted small mb-0">
-            Developed and evaluated machine-learning systems for large-scale identity verification, working with class
-            imbalance, data scarcity, latency constraints, and GAN-based synthetic-data generation.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">May – August 2019</div>
-          <h4>Research Intern in Computational Neuroscience</h4>
-          <h5><a class="academic-link" href="https://www.bristol.ac.uk/science-engineering/schools/eng-maths-tech/" target="_blank" rel="noopener noreferrer">University of Bristol · School of Engineering Mathematics and Technology <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
-          <p class="text-muted small mb-1"><strong>Supervisor:</strong> <a class="academic-link" href="https://naokimas.github.io/naokimasuda.github.io/index.html" target="_blank" rel="noopener noreferrer">Prof. Naoki Masuda <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-          <p class="text-muted small mb-0">
-            Investigated correlation methods in fMRI data from individuals with autism spectrum disorder, focusing on
-            functional relationships and brain-connectivity patterns.
-          </p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">2018 – 2019</div>
-          <h4>Academic Exchange in Biomedical Engineering</h4>
-          <h5><a class="academic-link" href="https://polytech.univ-amu.fr/fr/formations/cycle-ingenieur/genie-biomedical" target="_blank" rel="noopener noreferrer">Polytech Marseille · Aix-Marseille Université · France <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
-          <p class="text-muted small mb-0">
-            International academic mobility during the Biomedical Engineering degree, supported by CAPES/BRAFITEC.
-          </p>
-        </div>
-
-        <div class="timeline-item pb-0">
-          <div class="timeline-date">2015 – 2022</div>
-          <h4>BSc in Biomedical Engineering</h4>
-          <h5><a class="academic-link" href="https://www.feelt.ufu.br/graduacao/engenharia-biomedica" target="_blank" rel="noopener noreferrer">Federal University of Uberlândia · Biomedical Engineering <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></h5>
-          <p class="text-muted small mb-0">
-            Undergraduate training in biomedical engineering, signal processing, and neuroimaging, including research
-            on correlation methods applied to functional MRI.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications" class="page-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Selected Publications</h2>
-          <p class="section-subheading">Early work across biomedical engineering, signal processing, and mathematical modeling.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="pub-card">
-            <div class="pub-meta"><span>2019</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h4 lang="pt-BR">Desenvolvimento de um sistema de controle para diluição automática de desinfetantes</h4>
-            <p class="small text-muted mb-1">XII Simpósio de Engenharia Biomédica / IX Simpósio de Instrumentação e Imagens Médicas.</p>
-            <a class="doi-link" href="https://doi.org/10.5281/zenodo.3461042" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Desenvolvimento de um sistema de controle para diluição automática de desinfetantes"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="pub-card">
-            <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h4 lang="pt-BR">Dispositivo para monitoramento de estresse através de biofeedback</h4>
-            <p class="small text-muted mb-1">XI Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128408" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Dispositivo para monitoramento de estresse através de biofeedback"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="pub-card">
-            <div class="pub-meta"><span>2018</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h4 lang="pt-BR">Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários</h4>
-            <p class="small text-muted mb-1">XI Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/xiseb.128430" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Comparação eletromiográfica do músculo reto femoral entre indivíduos sedentários e não sedentários"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="pub-card">
-            <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h4 lang="pt-BR">Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos</h4>
-            <p class="small text-muted mb-1">V Congresso Brasileiro de Eletromiografia e Cinesiologia / X Simpósio de Engenharia Biomédica.</p>
-            <a class="doi-link" href="https://doi.org/10.29327/cobecseb.78900" target="_blank" rel="noopener noreferrer" aria-label="Open DOI for Serious Game para Reabilitação Motora Utilizando Sinais Eletromiográficos"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="pub-card">
-            <div class="pub-meta"><span>2017</span><span class="pub-dot"></span><span>Conference paper</span></div>
-            <h4 lang="pt-BR">O Problema de Geometria de Distâncias Moleculares Discretizável</h4>
-            <p class="small text-muted mb-0">XVII Semana da Matemática / VII Semana da Estatística, Federal University of Uberlândia.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="pub-card d-flex flex-column justify-content-center text-center">
-            <i class="fas fa-book-open fa-2x mb-3" style="color:#304d7a;"></i>
-            <h4>Full research record</h4>
-            <p class="small text-muted">Additional conference work and abstracts are available through my research profiles.</p>
-            <p class="mb-0 small">
-              <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
-              &nbsp;·&nbsp;
-              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-              &nbsp;·&nbsp;
-              <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section mini-section" id="expertise">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-12 mb-4">
-          <h2 class="section-heading">Methods & Tools</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="expertise-card">
-            <i class="fas fa-network-wired" aria-hidden="true"></i>
-            <h4>Machine Learning</h4>
-            <p class="text-muted small mb-0">PyTorch · PyTorch Geometric · scikit-learn · XGBoost</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="expertise-card">
-            <i class="fas fa-code" aria-hidden="true"></i>
-            <h4>Scientific Computing</h4>
-            <p class="text-muted small mb-0">Python · MATLAB · C++ · NumPy · Pandas · NetworkX</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="expertise-card">
-            <i class="fas fa-vial" aria-hidden="true"></i>
-            <h4>Experimental Methods</h4>
-            <p class="text-muted small mb-0">Nested cross-validation · Robustness analysis · Ablations · Model explainability</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section community-strip" id="community">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Beyond Research</h2>
-          <p class="section-subheading">Community involvement, recognition, and languages that complement my academic profile.</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-users mr-2" aria-hidden="true"></i>Community</h4>
-            <p class="text-muted small mb-0">Volunteer Project Assistant at <strong>Data Girls</strong> (2023–2025), supporting outreach and mentorship initiatives for women in technology.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-trophy mr-2" aria-hidden="true"></i>Recognition</h4>
-            <p class="text-muted small mb-0">Winner of the 2017 <strong>Innovations in Electromyography &amp; Kinesiology</strong> competition; OBMEP bronze medalist (2010, 2015) with three honorable mentions.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info-card">
-            <h4 class="font-weight-bold"><i class="fas fa-language mr-2" aria-hidden="true"></i>Languages</h4>
-            <p class="text-muted small mb-0">Portuguese (Native) · English (B2) · French (B1)</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Contact</h2>
-          <p class="section-subheading">Research collaborations and academic inquiries.</p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="contact-card">
-            <h4 class="service-heading h6">Location</h4>
-            <p class="mb-0">São Carlos, Brazil</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="contact-card">
-            <h4 class="service-heading h6">Email</h4>
-            <p class="mb-0"><a href="mailto:brunacampos.g@usp.br">brunacampos.g@usp.br</a></p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="contact-card">
-            <h4 class="service-heading h6">Research Profiles</h4>
-            <p class="mb-0 small">
-              <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
-              &nbsp;·&nbsp;
-              <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
-              &nbsp;·&nbsp;
-              <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
-          <span class="copyright">&copy; 2026 Bruna Campos Guedes <span class="footer-separator">·</span> Last updated August 2026</span>
-        </div>
-        <div class="col-md-4 text-center mb-3 mb-md-0">
-          <ul class="list-inline social-buttons mb-0">
-            <li class="list-inline-item"><a href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/brunacamposguedes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-center text-md-right">
-          <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
-          &nbsp;·&nbsp;
-          <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-copy">&copy; 2026 Bruna Campos Guedes <span class="separator">·</span> Last updated August 2026</div>
+
+      <div class="footer-social" aria-label="Social links">
+        <a href="https://github.com/brunacg?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://scholar.google.com/citations?user=6fiZEtUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/brunacamposguedes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="footer-profiles">
+        <a href="https://orcid.org/0000-0002-4384-0056" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <span class="separator">·</span>
+        <a href="http://lattes.cnpq.br/5098861497873665" target="_blank" rel="noopener noreferrer">Lattes</a>
       </div>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Close the mobile navigation after selecting an in-page link.
-    document.querySelectorAll('#navbarResponsive a[href^="#"]').forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (window.innerWidth < 992 && window.jQuery) {
-          window.jQuery('#navbarResponsive').collapse('hide');
-        }
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
+    const navAnchors = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+
+    menuButton.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+    });
+
+    navAnchors.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
       });
     });
+
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const navMap = new Map(navAnchors.map(link => [link.getAttribute('href').slice(1), link]));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navAnchors.forEach(link => link.classList.remove('active'));
+        const active = navMap.get(entry.target.id);
+        if (active) active.classList.add('active');
+      });
+    }, {
+      rootMargin: '-22% 0px -68% 0px',
+      threshold: 0
+    });
+
+    sections.forEach(section => observer.observe(section));
   </script>
 </body>
-
 </html>
