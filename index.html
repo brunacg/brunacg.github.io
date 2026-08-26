@@ -214,6 +214,31 @@
       color: #fff;
     }
 
+    #mainNav .nav-item-github {
+      margin-left: 0.45rem;
+      display: flex;
+      align-items: center;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.42rem;
+      padding: 0.48rem 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.06);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-github:hover,
+    #mainNav .navbar-nav .nav-item .nav-github:focus {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.38);
+    }
+
     #mainNav .navbar-toggler {
       padding: 0.62rem 0.78rem;
       border: 0;
@@ -348,6 +373,19 @@
       background: #8f4305;
       border-color: #8f4305;
       color: #fff;
+    }
+
+    .btn-projects {
+      color: var(--navy);
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .btn-projects:hover,
+    .btn-projects:focus {
+      color: var(--navy);
+      border-color: #fff;
+      background: #fff;
     }
 
     .btn-ghost {
@@ -914,6 +952,15 @@
         font-size: clamp(3.4rem, 10vw, 5.5rem);
       }
 
+      #mainNav .nav-item-github {
+        margin-left: 0;
+        margin-top: 0.45rem;
+      }
+
+      #mainNav .navbar-nav .nav-item .nav-github {
+        width: max-content;
+      }
+
       .about-grid {
         grid-template-columns: 1fr;
       }
@@ -1033,6 +1080,12 @@
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item nav-item-github">
+            <a class="nav-link nav-github" href="https://github.com/brunacg?tab=repositories" target="_blank"
+              rel="noopener noreferrer" aria-label="Open GitHub repositories in a new tab">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -1055,11 +1108,20 @@
             <span><i class="fas fa-heartbeat" aria-hidden="true"></i>AI for Healthcare</span>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#research">Explore Research</a>
+            <a class="btn btn-primary" href="#research">
+              <i class="fas fa-flask mr-2" aria-hidden="true"></i>Explore Research
+            </a>
+            <a class="btn btn-projects" href="#projects">
+              <i class="fas fa-code-branch mr-2" aria-hidden="true"></i>Explore Projects
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/brunacg?tab=repositories" target="_blank"
+              rel="noopener noreferrer" aria-label="Open GitHub repositories in a new tab">
+              <i class="fab fa-github mr-2" aria-hidden="true"></i>GitHub
+            </a>
             <a class="btn btn-ghost" href="https://drive.google.com/file/d/1fVLgzw0kVzcNrow3oSQdUiePDtPNPHI4/view?usp=sharing"
-              target="_blank" rel="noopener noreferrer" aria-label="Open curriculum vitae in a new tab">CV</a>
-            <a class="btn btn-ghost" href="https://orcid.org/0000-0002-4384-0056" target="_blank"
-              rel="noopener noreferrer" aria-label="Open ORCID profile in a new tab">ORCID</a>
+              target="_blank" rel="noopener noreferrer" aria-label="Open curriculum vitae in a new tab">
+              <i class="fas fa-file-alt mr-2" aria-hidden="true"></i>CV
+            </a>
           </div>
         </div>
       </div>
